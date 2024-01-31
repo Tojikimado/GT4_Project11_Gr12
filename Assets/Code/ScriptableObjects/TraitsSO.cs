@@ -11,5 +11,5 @@ public class TraitSO : ScriptableObject
     public string Description => m_Description;
 
     [SerializeField] private List<TraitSO> m_ConflictTraits;
-    public List<TraitSO> ConfilctTraits => m_ConflictTraits;
+    public List<TraitSO> ConflictTraits => m_ConflictTraits;
 }
