@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566364b5ab072f847897ec0a976bb595, type: 3}
+  m_Name: Modeste
+  m_EditorClassIdentifier: 
+  m_TraitName: Modeste
+  m_Description: "Pr\xE9f\xE8re rester humble et ne pas attirer l'attention sur ses
+    r\xE9alisations."
+  m_ConflictTraits:
+  - {fileID: 11400000, guid: 202f999a7156c0845b44a166412bef9f, type: 2}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566364b5ab072f847897ec0a976bb595, type: 3}
+  m_Name: Charismatique
+  m_EditorClassIdentifier: 
+  m_TraitName: Charismatique
+  m_Description: "Capable d'influencer et de motiver les autres gr\xE2ce \xE0 son
+    charme et \xE0 sa pr\xE9sence."
+  m_ConflictTraits:
+  - {fileID: 11400000, guid: c4f28b22e8d72584f88506b00165ac47, type: 2}
