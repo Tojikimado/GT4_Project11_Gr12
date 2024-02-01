@@ -1,8 +1,18 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
-
+using TMPro;
 public class NPC : MonoBehaviour
 {
+
+
+    [SerializeField] private TextMeshProUGUI Name_Text;
+    //[SerializeField] private TextMeshProUGUI DEscr;
+    [SerializeField] private TextMeshProUGUI Trait_1;
+    [SerializeField] private TextMeshProUGUI Trait_2;
+    [SerializeField] private TextMeshProUGUI Trait_3;
+
+
     [SerializeField] private Sprite m_Photo;
     public Sprite Photo
     {
@@ -33,12 +43,19 @@ public class NPC : MonoBehaviour
 
     public void AfficherInfos()
     {
-        Debug.Log("Nom: " + m_Name);
-        Debug.Log("Description: " + m_Description);
-        Debug.Log("Traits de personnalité:");
+        //Debug.Log("Nom: " + m_Name);
+        Name_Text.text = m_Name;
+
+        //Debug.Log("Description: " + m_Description);
+       // DEscr.text = m_Description;
+        //Debug.Log("Traits de personnalité:");
+        
         foreach (TraitSO trait in m_PersonalityTraits)
         {
-            Debug.Log("- " + trait.Name);
+            //Debug.Log("- " + trait.Name);
         }
+        Trait_1.text = m_PersonalityTraits[0].Name;
+        Trait_2.text = m_PersonalityTraits[1].Name;
+        Trait_3.text = m_PersonalityTraits[2].Name;
     }
 }
