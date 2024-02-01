@@ -5,36 +5,28 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
 
+    [SerializeField] private Vector3 m_EndPointLeft;
+    [SerializeField] private Vector3 m_EndPointRight;
+    [SerializeField] private float  m_Step;
+    [SerializeField] private List<GameObject> m_NPCList;
 
-    public Vector3 EndPointLeft;
-    public Vector3 EndPointRight;
-    public float  step ;
-    public List<GameObject> NPCLIST;
-
-
-    void Start()
+    public void AddToNPCList(GameObject npc)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        m_NPCList.Add(npc);
     }
 
     public void GoLeft()
     {
-        foreach(var item in NPCLIST)
+        foreach(var item in m_NPCList)
         {
-            item.transform.localPosition = new Vector3(item.transform.localPosition.x + step, item.transform.localPosition.y, item.transform.localPosition.z);
+            item.transform.localPosition = new Vector3(item.transform.localPosition.x + m_Step, item.transform.localPosition.y, item.transform.localPosition.z);
         }
     }
     public void GoRight()
     {
-        foreach (var item in NPCLIST)
+        foreach (var item in m_NPCList)
         {
-            item.transform.localPosition = new Vector3(item.transform.localPosition.x - step, item.transform.localPosition.y, item.transform.localPosition.z);
+            item.transform.localPosition = new Vector3(item.transform.localPosition.x - m_Step, item.transform.localPosition.y, item.transform.localPosition.z);
         }
     }
 
