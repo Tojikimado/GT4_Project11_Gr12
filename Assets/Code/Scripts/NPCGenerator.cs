@@ -13,15 +13,13 @@ public class NPCGenerator : MonoBehaviour
     [SerializeField] private UIManager m_UIManager;
     [SerializeField] private int m_Seed;
 
-    private float pos = 0.0f;
-    private int buffer= 0;
-    private int buffer2= -1;
-
     private void Start()
     {
         m_Seed = (int)System.DateTime.Now.Ticks;
 
         GenerateNPCs();
+
+        m_UIManager.UpdateSeed(m_Seed.ToString());
     }
 
     void GenerateNPCs()
@@ -32,6 +30,8 @@ public class NPCGenerator : MonoBehaviour
         {
             NPC newNPC = CreateNPC(i + 1);
         }
+        m_UIManager.RefreshAllNPC();
+        m_UIManager.PlaceNPC();
     }
 
     NPC CreateNPC(int npcNumber)
@@ -39,31 +39,12 @@ public class NPCGenerator : MonoBehaviour
         GameObject NPCGO = Instantiate(m_NPCPrefab, m_Canvas.transform);
         m_UIManager.AddToNPCList(NPCGO);
 
-        if (npcNumber % 2 == 0)
-        {
-            pos = 280.0f * buffer * buffer2;
-            buffer2 *= -1;
-        }
-           
-            
-        if (npcNumber % 2 == 1)
-        {
-            pos = 280.0f * buffer * buffer2;
-            buffer++;
-            buffer2 *= -1;
-            
-        }
-            
-
-
-        NPCGO.transform.localPosition = new Vector3(pos, NPCGO.transform.localPosition.y, NPCGO.transform.localPosition.z);
-
         NPC newNPC = NPCGO.GetComponent<NPC>();
         newNPC.Name = GenerateRandomName(npcNumber);
         newNPC.PersonalityTraits = GenerateRandomTraits(m_AllPersonalityTraits);
         newNPC.PhysicalTraits = GenerateRandomTraits(m_AllPhysicalTraits);
         newNPC.Description = GenerateRandomDescription(newNPC.Name, newNPC.PersonalityTraits, newNPC.PhysicalTraits);
-
+       
         return newNPC;
     }
 

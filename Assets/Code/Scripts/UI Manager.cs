@@ -1,48 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-
-    [SerializeField] private Vector3 m_EndPointLeft;
-    [SerializeField] private Vector3 m_EndPointRight;
-    [SerializeField] private float  m_Step;
     [SerializeField] private List<GameObject> m_NPCList;
-
+    [SerializeField] private List<Transform> m_placeHolder;
+    [SerializeField] private TMP_InputField seed;
     public void AddToNPCList(GameObject npc)
     {
         m_NPCList.Add(npc);
     }
 
-    public void GoLeft()
+    public void RefreshAllNPC()
     {
-        foreach(var item in m_NPCList)
+        foreach(var t in m_NPCList)
         {
-            item.transform.localPosition = new Vector3(item.transform.localPosition.x + m_Step, item.transform.localPosition.y, item.transform.localPosition.z);
+            NPCView temp = t.GetComponent<NPCView>();
+            temp.UpdateNpcView();
         }
     }
-    public void GoRight()
+    public void UpdateSeed(string tmp)
     {
-        foreach (var item in m_NPCList)
+        seed.text = tmp;
+    }
+    public void PlaceNPC()
+    {
+        for(int i = 0; i< m_NPCList.Count; i++)
         {
-            item.transform.localPosition = new Vector3(item.transform.localPosition.x - m_Step, item.transform.localPosition.y, item.transform.localPosition.z);
+            m_NPCList[i].transform.localPosition = m_placeHolder[i].localPosition;
         }
     }
 
-
-    public void CheckBorderLeft(GameObject item)
-    {
-        if(item.transform.position.x == -840.0f)
-        {
-            item.transform.position = new Vector3(840.0f,0,0);
-        }
-    }
-    public void CheckBorderRight(GameObject item)
-    {
-        if (item.transform.position.x == 1120.0f)
-        {
-            item.transform.position= new Vector3(-560.0f, 0, 0);
-        }
-    }
 }

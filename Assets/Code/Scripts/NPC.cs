@@ -17,7 +17,7 @@ public class NPC : MonoBehaviour
         get { return m_NPCName; }
         set { m_NPCName = value; }
     }
-
+   
     [SerializeField] private  List<TraitSO> m_PersonalityTraits;
     public List<TraitSO> PersonalityTraits
     {
