@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 566364b5ab072f847897ec0a976bb595, type: 3}
-  m_Name: Homme
+  m_Name: Yeux verts
   m_EditorClassIdentifier: 
-  m_TraitName: Homme
-  m_TraitDescription: De sexe masculin.
+  m_TraitName: Yeux verts
+  m_TraitDescription: Avec des yeux verts.
   m_TraitType: 1
   m_ConflictTraits:
-  - {fileID: 11400000, guid: 0cce0f8b42ae5fd46bbe885e6da7c9f1, type: 2}
+  - {fileID: 11400000, guid: fcbf2e288d2316748b12a437ee3c05ae, type: 2}
+  - {fileID: 11400000, guid: 70bbe96e326ab8e47b4923ff4370a0de, type: 2}

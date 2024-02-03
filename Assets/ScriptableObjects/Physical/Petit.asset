@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 566364b5ab072f847897ec0a976bb595, type: 3}
-  m_Name: Homme
+  m_Name: Petit
   m_EditorClassIdentifier: 
-  m_TraitName: Homme
-  m_TraitDescription: De sexe masculin.
+  m_TraitName: Petit
+  m_TraitDescription: De petite taille.
   m_TraitType: 1
   m_ConflictTraits:
-  - {fileID: 11400000, guid: 0cce0f8b42ae5fd46bbe885e6da7c9f1, type: 2}
+  - {fileID: 11400000, guid: 20a378c00f774944c9687da5fde51156, type: 2}

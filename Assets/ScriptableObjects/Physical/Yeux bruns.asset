@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 566364b5ab072f847897ec0a976bb595, type: 3}
-  m_Name: Homme
+  m_Name: Yeux bruns
   m_EditorClassIdentifier: 
-  m_TraitName: Homme
-  m_TraitDescription: De sexe masculin.
+  m_TraitName: Yeux bruns
+  m_TraitDescription: Avec des yeux bruns.
   m_TraitType: 1
   m_ConflictTraits:
-  - {fileID: 11400000, guid: 0cce0f8b42ae5fd46bbe885e6da7c9f1, type: 2}
+  - {fileID: 11400000, guid: fcbf2e288d2316748b12a437ee3c05ae, type: 2}
+  - {fileID: 11400000, guid: f698a4c0f1075c44c8d62346dc14abde, type: 2}
