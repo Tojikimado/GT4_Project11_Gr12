@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Prudent
   m_EditorClassIdentifier: 
   m_TraitName: Prudent
-  m_Description: "Pr\xE9f\xE8re rester dans sa zone de confort et \xE9viter les risques."
+  m_TraitDescription: "Pr\xE9f\xE8re rester dans sa zone de confort et \xE9viter
+    les risques."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 5ec79099a3e21f14a9eefb356ff759c2, type: 2}

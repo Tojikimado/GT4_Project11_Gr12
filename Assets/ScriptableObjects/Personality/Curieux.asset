@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Curieux
   m_EditorClassIdentifier: 
   m_TraitName: Curieux
-  m_Description: "A soif de connaissances et cherche constamment \xE0 apprendre de
-    nouvelles choses."
+  m_TraitDescription: "A soif de connaissances et cherche constamment \xE0 apprendre
+    de nouvelles choses."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: d42ae81393052fb4e9c2436b6e1cad66, type: 2}

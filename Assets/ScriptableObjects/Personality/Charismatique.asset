@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Charismatique
   m_EditorClassIdentifier: 
   m_TraitName: Charismatique
-  m_Description: "Capable d'influencer et de motiver les autres gr\xE2ce \xE0 son
-    charme et \xE0 sa pr\xE9sence."
+  m_TraitDescription: "Capable d'influencer et de motiver les autres gr\xE2ce \xE0
+    son charme et \xE0 sa pr\xE9sence."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: c4f28b22e8d72584f88506b00165ac47, type: 2}

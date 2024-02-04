@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Ambitieux
   m_EditorClassIdentifier: 
   m_TraitName: Ambitieux
-  m_Description: "Aspire \xE0 atteindre des objectifs \xE9lev\xE9s et \xE0 r\xE9ussir
+  m_TraitDescription: "Aspire \xE0 atteindre des objectifs \xE9lev\xE9s et \xE0 r\xE9ussir
     dans ses entreprises."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: a51881822e0cf0944baa19667dedfb53, type: 2}

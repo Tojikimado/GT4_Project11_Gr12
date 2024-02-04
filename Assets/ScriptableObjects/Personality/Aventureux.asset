@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Aventureux
   m_EditorClassIdentifier: 
   m_TraitName: Aventureux
-  m_Description: "Toujours en qu\xEAte de nouvelles exp\xE9riences et de d\xE9couvertes."
+  m_TraitDescription: "Toujours en qu\xEAte de nouvelles exp\xE9riences et de d\xE9couvertes."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: c1c4bdba7985e1c48a0501224febdcd2, type: 2}

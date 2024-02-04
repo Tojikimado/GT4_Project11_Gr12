@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Empathique
   m_EditorClassIdentifier: 
   m_TraitName: Empathique
-  m_Description: "Description : Capable de comprendre et de ressentir les \xE9motions
-    des autres."
+  m_TraitDescription: "Capable de comprendre et de ressentir les \xE9motions des
+    autres."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 3b78864e59680e3468f4ce39fdf64140, type: 2}

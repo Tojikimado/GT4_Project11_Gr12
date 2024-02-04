@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: "Tol\xE9rant"
   m_EditorClassIdentifier: 
   m_TraitName: "Tol\xE9rant"
-  m_Description: "Accepte les diff\xE9rences et les opinions des autres."
+  m_TraitDescription: "Accepte les diff\xE9rences et les opinions des autres."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: c184b34be810e3344a00557a73205539, type: 2}

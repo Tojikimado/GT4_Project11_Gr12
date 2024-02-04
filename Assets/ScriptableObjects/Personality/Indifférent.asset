@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: "Indiff\xE9rent"
   m_EditorClassIdentifier: 
   m_TraitName: "Indiff\xE9rent"
-  m_Description: "Manque d'int\xE9r\xEAt ou de sensibilit\xE9 envers les \xE9motions
+  m_TraitDescription: "Manque d'int\xE9r\xEAt ou de sensibilit\xE9 envers les \xE9motions
     des autres."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: b6149f39cb4a0cd4fa5f274b2797ebda, type: 2}

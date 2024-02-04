@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Modeste
   m_EditorClassIdentifier: 
   m_TraitName: Modeste
-  m_Description: "Pr\xE9f\xE8re rester humble et ne pas attirer l'attention sur ses
-    r\xE9alisations."
+  m_TraitDescription: "Pr\xE9f\xE8re rester humble et ne pas attirer l'attention
+    sur ses r\xE9alisations."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 202f999a7156c0845b44a166412bef9f, type: 2}

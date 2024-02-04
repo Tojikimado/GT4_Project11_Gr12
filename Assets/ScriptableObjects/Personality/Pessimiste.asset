@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Pessimiste
   m_EditorClassIdentifier: 
   m_TraitName: Pessimiste
-  m_Description: "Anticipe le pire dans les circonstances et a du mal \xE0 voir les
-    aspects positifs."
+  m_TraitDescription: "Anticipe le pire dans les circonstances et a du mal \xE0 voir
+    les aspects positifs."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: caf0773d1063b2647836f6d4332cec79, type: 2}

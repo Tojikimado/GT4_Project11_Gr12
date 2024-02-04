@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Extraverti
   m_EditorClassIdentifier: 
   m_TraitName: Extraverti
-  m_Description: "Tire de l'\xE9nergie des interactions sociales et aime \xEAtre
+  m_TraitDescription: "Tire de l'\xE9nergie des interactions sociales et aime \xEAtre
     entour\xE9 de personnes."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 7a27e8ede78b93d4ba58820789d3d196, type: 2}

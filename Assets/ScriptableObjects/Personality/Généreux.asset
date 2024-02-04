@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: "G\xE9n\xE9reux"
   m_EditorClassIdentifier: 
   m_TraitName: "G\xE9n\xE9reux"
-  m_Description: "A un d\xE9sir naturel d'aider et de donner aux autres."
+  m_TraitDescription: "A un d\xE9sir naturel d'aider et de donner aux autres."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 5c38f03ccb3b1184b87301bdd8ba01bf, type: 2}

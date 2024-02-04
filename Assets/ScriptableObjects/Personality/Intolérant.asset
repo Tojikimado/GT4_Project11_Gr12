@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: "Intol\xE9rant"
   m_EditorClassIdentifier: 
   m_TraitName: "Intol\xE9rant"
-  m_Description: "A du mal \xE0 accepter les opinions ou les modes de vie diff\xE9rents
+  m_TraitDescription: "A du mal \xE0 accepter les opinions ou les modes de vie diff\xE9rents
     des siens."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 5a9e7e995ab1c644b840be72af4b98cd, type: 2}

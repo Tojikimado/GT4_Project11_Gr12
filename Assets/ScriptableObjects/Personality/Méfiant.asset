@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: "M\xE9fiant"
   m_EditorClassIdentifier: 
   m_TraitName: "M\xE9fiant"
-  m_Description: "A du mal \xE0 faire confiance aux autres et se m\xE9fie des intentions
-    cach\xE9es."
+  m_TraitDescription: "A du mal \xE0 faire confiance aux autres et se m\xE9fie des
+    intentions cach\xE9es."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 2b73a3e9920f53941bfd16330ff96596, type: 2}

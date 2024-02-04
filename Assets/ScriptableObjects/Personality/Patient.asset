@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Patient
   m_EditorClassIdentifier: 
   m_TraitName: Patient
-  m_TraitDescription: 
+  m_TraitDescription: Capable de garder son calme dans des situations stressantes.
   m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 6c3a4b8fc0b81f64c9f884d021605ba7, type: 2}

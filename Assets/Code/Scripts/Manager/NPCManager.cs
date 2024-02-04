@@ -2,8 +2,10 @@ using UnityEngine;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using System.Diagnostics;
+using System.Text;
+using System.Globalization;
 
-public class NPCGenerator : MonoBehaviour
+public class NPCManager : MonoBehaviour
 {
     [SerializeField] private List<TraitSO> m_AllPersonalityTraits;
     [SerializeField] private List<TraitSO> m_AllPhysicalTraits;
@@ -13,12 +15,13 @@ public class NPCGenerator : MonoBehaviour
     [SerializeField] private UIManager m_UIManager;
     [SerializeField] private int m_Seed;
 
+    private SentencesTemplates m_SentencesTemplates;
+
     private void Start()
     {
         m_Seed = (int)System.DateTime.Now.Ticks;
-
+        m_SentencesTemplates = JSONLoader.Instance.LoadSentencesTemplates("TraitsSentences");
         GenerateNPCs();
-
         m_UIManager.UpdateSeed(m_Seed.ToString());
     }
 
@@ -43,7 +46,7 @@ public class NPCGenerator : MonoBehaviour
         newNPC.Name = GenerateRandomName(npcNumber);
         newNPC.PersonalityTraits = GenerateRandomTraits(m_AllPersonalityTraits);
         newNPC.PhysicalTraits = GenerateRandomTraits(m_AllPhysicalTraits);
-        newNPC.Description = GenerateRandomDescription(newNPC.Name, newNPC.PersonalityTraits, newNPC.PhysicalTraits);
+        newNPC.Description = GenerateRandomDescription(newNPC.Name, newNPC.PersonalityTraits);
        
         return newNPC;
     }
@@ -78,18 +81,50 @@ public class NPCGenerator : MonoBehaviour
         return randomTraits;
     }
 
-    string GenerateRandomDescription(string name, List<TraitSO> personalityTraits, List<TraitSO> physicalTraits)
+    string GenerateRandomDescription(string name, List<TraitSO> personalityTraits)
     {
-        string description = "Je suis " + name + ".\nMes traits principaux de personnalité sont :\n";
-
+        string description = "";
+        
         foreach (TraitSO trait in personalityTraits)
-            description += "- " + trait.Name + "\n";
-
-        description += "\nMes traits physiques sont :\n";
-
-        foreach (TraitSO trait in physicalTraits)
-            description += "- " + trait.Name + "\n";
+        {
+            string traitName = RemoveDiacritics(trait.Name.Trim());
+            if (m_SentencesTemplates.TraitsSentences.ContainsKey(traitName))
+            {
+                TraitSentences traitSentences = m_SentencesTemplates.TraitsSentences[traitName];
+                string randomSentence = GetRandomSentence(traitSentences);
+                description += randomSentence + "\n";
+            }
+            else
+                UnityEngine.Debug.LogWarning("La clé '" + traitName + "' n'est pas présente dans le dictionnaire.");
+        }
 
         return description;
+    }
+
+    string GetRandomSentence(TraitSentences traitSentences)
+    {
+        List<string> allSentences = new List<string>();
+        allSentences.AddRange(traitSentences.Past);
+        allSentences.AddRange(traitSentences.Present);
+        allSentences.AddRange(traitSentences.Futur);
+
+        int randomIndex = Random.Range(0, allSentences.Count);
+        return allSentences[randomIndex];
+    }
+
+    private string RemoveDiacritics(string text)
+    {
+        string normalized = text.Normalize(NormalizationForm.FormD);
+        StringBuilder builder = new StringBuilder();
+
+        foreach (char c in normalized)
+        {
+            if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
+            {
+                builder.Append(c);
+            }
+        }
+
+        return builder.ToString();
     }
 }

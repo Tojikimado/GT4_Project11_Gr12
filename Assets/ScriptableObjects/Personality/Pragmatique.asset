@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Pragmatique
   m_EditorClassIdentifier: 
   m_TraitName: Pragmatique
-  m_Description: "Se concentre sur des approches pratiques et \xE9prouv\xE9es pour
-    r\xE9soudre les probl\xE8mes."
+  m_TraitDescription: "Se concentre sur des approches pratiques et \xE9prouv\xE9es
+    pour r\xE9soudre les probl\xE8mes."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 0ef1c0cfdcd3df548b11bfd3246b8692, type: 2}

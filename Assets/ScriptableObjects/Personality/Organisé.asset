@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: "Organis\xE9"
   m_EditorClassIdentifier: 
   m_TraitName: "Organis\xE9"
-  m_Description: "Pr\xE9f\xE8re planifier et structurer ses activit\xE9s pour atteindre
-    ses objectifs de mani\xE8re efficace."
+  m_TraitDescription: "Pr\xE9f\xE8re planifier et structurer ses activit\xE9s pour
+    atteindre ses objectifs de mani\xE8re efficace."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: a25900f4bf204324895672320bab4657, type: 2}

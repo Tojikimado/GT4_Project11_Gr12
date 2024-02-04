@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: "Passionn\xE9"
   m_EditorClassIdentifier: 
   m_TraitName: "Passionn\xE9"
-  m_Description: "Investit \xE9motionnellement dans ses int\xE9r\xEAts et ses projets."
+  m_TraitDescription: "Investit \xE9motionnellement dans ses int\xE9r\xEAts et ses
+    projets."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 08323d747abefb44c9c436f1b52f19f7, type: 2}

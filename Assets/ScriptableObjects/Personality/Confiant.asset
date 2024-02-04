@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Confiant
   m_EditorClassIdentifier: 
   m_TraitName: Confiant
-  m_Description: "Croit en ses capacit\xE9s et en son potentiel."
+  m_TraitDescription: "Croit en ses capacit\xE9s et en son potentiel."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: f49b6285754756a4ba7f6673654b1c84, type: 2}

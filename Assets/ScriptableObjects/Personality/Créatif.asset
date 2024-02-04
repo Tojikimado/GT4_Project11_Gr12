@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: "Cr\xE9atif"
   m_EditorClassIdentifier: 
   m_TraitName: "Cr\xE9atif"
-  m_Description: "Capable de penser de mani\xE8re innovante et de trouver des solutions
-    uniques."
+  m_TraitDescription: "Capable de penser de mani\xE8re innovante et de trouver des
+    solutions uniques."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 8bd69b02aadb70b4d97c9f202442768d, type: 2}

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: "Honn\xEAte"
   m_EditorClassIdentifier: 
   m_TraitName: "Honn\xEAte"
-  m_Description: "Dit toujours la v\xE9rit\xE9, m\xEAme si cela peut \xEAtre difficile."
+  m_TraitDescription: "Dit toujours la v\xE9rit\xE9, m\xEAme si cela peut \xEAtre
+    difficile."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 239a2ac5cb85f0642ba510f787a1ebc9, type: 2}

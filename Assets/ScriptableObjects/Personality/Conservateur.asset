@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Conservateur
   m_EditorClassIdentifier: 
   m_TraitName: Conservateur
-  m_Description: "Pr\xE9f\xE8re maintenir les traditions et les routines \xE9tablies."
+  m_TraitDescription: "Pr\xE9f\xE8re maintenir les traditions et les routines \xE9tablies."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: b2ec37924c8021b4b86ce6e3a7c739d9, type: 2}

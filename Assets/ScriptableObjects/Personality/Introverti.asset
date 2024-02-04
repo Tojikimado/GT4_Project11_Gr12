@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Introverti
   m_EditorClassIdentifier: 
   m_TraitName: Introverti
-  m_Description: "Pr\xE9f\xE8re des interactions limit\xE9es et se recharge en solitaire."
+  m_TraitDescription: "Pr\xE9f\xE8re des interactions limit\xE9es et se recharge
+    en solitaire."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 96331183a57bb8f47a872f02eb2a4a34, type: 2}

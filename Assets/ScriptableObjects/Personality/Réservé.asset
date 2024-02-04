@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: "R\xE9serv\xE9"
   m_EditorClassIdentifier: 
   m_TraitName: "R\xE9serv\xE9"
-  m_Description: "Pr\xE9f\xE8re rester en retrait et \xE9viter d'attirer l'attention
+  m_TraitDescription: "Pr\xE9f\xE8re rester en retrait et \xE9viter d'attirer l'attention
     sur lui."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 773572673e6e63044b45decffbed1de1, type: 2}

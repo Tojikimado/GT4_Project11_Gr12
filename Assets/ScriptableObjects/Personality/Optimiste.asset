@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Optimiste
   m_EditorClassIdentifier: 
   m_TraitName: 'Optimiste '
-  m_Description: "Voit le c\xF4t\xE9 positif des situations et garde espoir m\xEAme
-    dans l'adversit\xE9."
+  m_TraitDescription: "Voit le c\xF4t\xE9 positif des situations et garde espoir
+    m\xEAme dans l'adversit\xE9."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 01cfae135f8ad624d929574d31ee3bb5, type: 2}

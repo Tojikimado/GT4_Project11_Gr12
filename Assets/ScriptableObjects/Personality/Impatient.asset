@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Impatient
   m_EditorClassIdentifier: 
   m_TraitName: Impatient
-  m_Description: "Veut des r\xE9sultats imm\xE9diats et a du mal \xE0 attendre."
+  m_TraitDescription: "Veut des r\xE9sultats imm\xE9diats et a du mal \xE0 attendre."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 39cece7afd2143d438512dbfaa7033e6, type: 2}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: "D\xE9sorganis\xE9"
   m_EditorClassIdentifier: 
   m_TraitName: "D\xE9sorganis\xE9"
-  m_Description: "A du mal \xE0 maintenir de l'ordre et de la structure dans ses
-    activit\xE9s quotidiennes."
+  m_TraitDescription: "A du mal \xE0 maintenir de l'ordre et de la structure dans
+    ses activit\xE9s quotidiennes."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 187cf7b9b2fd3544a9f7e8c070de5de3, type: 2}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: "D\xE9tach\xE9"
   m_EditorClassIdentifier: 
   m_TraitName: "D\xE9tach\xE9"
-  m_Description: "Reste distant et d\xE9sengag\xE9 des choses qui se passent autour
-    de lui."
+  m_TraitDescription: "Reste distant et d\xE9sengag\xE9 des choses qui se passent
+    autour de lui."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 49716a8e142cece4eb75be5cd98c8e77, type: 2}

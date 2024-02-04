@@ -430,8 +430,9 @@ GameObject:
   - component: {fileID: 869531224}
   - component: {fileID: 869531223}
   - component: {fileID: 869531225}
+  - component: {fileID: 869531226}
   m_Layer: 0
-  m_Name: NPCGEnerator
+  m_Name: Managers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,6 +524,18 @@ MonoBehaviour:
   - {fileID: 1078141404}
   - {fileID: 562646409}
   seed: {fileID: 1060134510}
+--- !u!114 &869531226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869531222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a59e15ca71a1d4b957e33a3b247c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &898699734
 GameObject:
   m_ObjectHideFlags: 0

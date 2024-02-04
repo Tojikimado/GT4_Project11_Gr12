@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: "\xC9go\xEFste"
   m_EditorClassIdentifier: 
   m_TraitName: "\xC9go\xEFste"
-  m_Description: "Se concentre principalement sur ses propres besoins et d\xE9sirs."
+  m_TraitDescription: "Se concentre principalement sur ses propres besoins et d\xE9sirs."
+  m_TraitType: 0
   m_ConflictTraits:
   - {fileID: 11400000, guid: 1db521147a1c168428186f64d960907b, type: 2}
