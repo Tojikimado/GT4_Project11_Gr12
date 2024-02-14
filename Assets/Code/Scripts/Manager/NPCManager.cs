@@ -47,7 +47,11 @@ public class NPCManager : MonoBehaviour
         newNPC.PersonalityTraits = GenerateRandomTraits(m_AllPersonalityTraits);
         newNPC.PhysicalTraits = GenerateRandomTraits(m_AllPhysicalTraits);
         newNPC.Description = GenerateRandomDescription(newNPC.Name, newNPC.PersonalityTraits);
-       
+
+        NPCView npcView = NPCGO.GetComponent<NPCView>();
+        npcView.SetDropDown(m_AllPersonalityTraits);
+        npcView.NPCManager = this;
+
         return newNPC;
     }
 
@@ -81,7 +85,7 @@ public class NPCManager : MonoBehaviour
         return randomTraits;
     }
 
-    string GenerateRandomDescription(string name, List<TraitSO> personalityTraits)
+    public string GenerateRandomDescription(string name, List<TraitSO> personalityTraits)
     {
         string description = "";
         

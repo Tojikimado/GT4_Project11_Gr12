@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
+using System;
 public class NPC : MonoBehaviour
 {
     [SerializeField] private Sprite m_Photo;
