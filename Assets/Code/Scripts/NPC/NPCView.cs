@@ -49,9 +49,38 @@ public class NPCView : MonoBehaviour
         TraitBOX.SetActive(!TraitBOX.activeSelf);
     }
 
-    public void OnDropdownValueChanged()
+    public void RegenDescription()
     {
-        NPCManager.GenerateRandomDescription(m_NameText.text, gameObject.GetComponent<NPC>().PersonalityTraits);
+        NPC npc = gameObject.GetComponent<NPC>();
+        if (npc != null)
+        {
+            CheckTrait(npc); 
+        }
+
+        npc.Description = NPCManager.GenerateRandomDescription(m_NameText.text, npc.PersonalityTraits);
+        m_DescriptionText.text = npc.Description;
+    }
+
+    private void CheckTrait(NPC npc)
+    {
+        for (int i = 0; i < m_PersonalityTraitsList.Count; i++)
+        {
+            for (int o = 0; o < m_PersonalityTraitsList.Count; o++)
+            {
+                if (i == o)
+                    break;
+                int dropdownIValue = m_PersonalityTraitsList[i].value;
+                int dropdownOValue = m_PersonalityTraitsList[o].value;
+
+                TraitSO oppositeI = NPCManager.AllPersonalityTraits[dropdownIValue].ConflictTraits[0];
+                int oppositeIValue = NPCManager.AllPersonalityTraits.IndexOf(oppositeI);
+
+                if (dropdownIValue == dropdownOValue || dropdownOValue == oppositeIValue)
+                {
+                    m_PersonalityTraitsList[o].value = UnityEngine.Random.Range(0, NPCManager.AllPersonalityTraits.Count);
+                }
+            }
+        }
     }
 
     public void SetDropDown(List<TraitSO> traits)

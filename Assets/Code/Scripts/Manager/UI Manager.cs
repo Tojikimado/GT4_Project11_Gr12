@@ -41,7 +41,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-
     public void ShowSelected(GameObject NPCSelected, bool value)
     {
         if (!value)
