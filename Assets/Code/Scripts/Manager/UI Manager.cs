@@ -70,4 +70,14 @@ public class UIManager : MonoBehaviour
         }
        
     }
+
+    public void DestroyAllNpc()
+    {
+        foreach(GameObject g in m_NPCList)
+        {
+            //m_NPCList.Remove(g);
+            Destroy(g);
+        }
+        m_NPCList.Clear();
+    }
 }
