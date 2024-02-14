@@ -14,12 +14,15 @@ public class NPCManager : MonoBehaviour
     [SerializeField] private GameObject m_Canvas;
     [SerializeField] private UIManager m_UIManager;
     [SerializeField] private int m_Seed;
+    [SerializeField] private FaceGenerator _FaceGenerator;
+
 
     private SentencesTemplates m_SentencesTemplates;
 
     private void Start()
     {
         m_Seed = (int)System.DateTime.Now.Ticks;
+       
         m_SentencesTemplates = JSONLoader.Instance.LoadSentencesTemplates("TraitsSentences");
         GenerateNPCs();
         m_UIManager.UpdateSeed(m_Seed.ToString());
@@ -28,15 +31,23 @@ public class NPCManager : MonoBehaviour
     void GenerateNPCs()
     {
         Random.InitState(m_Seed);
-
+        
         for (int i = 0; i < m_NPCToGenerate; i++)
         {
             NPC newNPC = CreateNPC(i + 1);
+            _FaceGenerator.GenerateFace(m_Seed, newNPC);
         }
         m_UIManager.RefreshAllNPC();
         m_UIManager.PlaceNPC();
     }
+    public void RefreshSeed()
+    {
+        m_Seed = (int)System.DateTime.Now.Ticks;
 
+        m_UIManager.DestroyAllNpc();
+        GenerateNPCs();
+        m_UIManager.UpdateSeed(m_Seed.ToString());
+    }
     NPC CreateNPC(int npcNumber)
     {
         GameObject NPCGO = Instantiate(m_NPCPrefab, m_Canvas.transform);
