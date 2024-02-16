@@ -22,8 +22,8 @@ public class NPCManager : MonoBehaviour
     private void Start()
     {
         m_Seed = (int)System.DateTime.Now.Ticks;
-       
-        m_SentencesTemplates = JSONLoader.Instance.LoadSentencesTemplates("TraitsSentences");
+        _FaceGenerator.SetUp(m_Seed);
+         m_SentencesTemplates = JSONLoader.Instance.LoadSentencesTemplates("TraitsSentences");
         GenerateNPCs();
         m_UIManager.UpdateSeed(m_Seed.ToString());
     }
@@ -35,7 +35,6 @@ public class NPCManager : MonoBehaviour
         for (int i = 0; i < m_NPCToGenerate; i++)
         {
             NPC newNPC = CreateNPC(i + 1);
-            _FaceGenerator.GenerateFace(m_Seed, newNPC);
         }
         m_UIManager.RefreshAllNPC();
         m_UIManager.PlaceNPC();
@@ -53,12 +52,17 @@ public class NPCManager : MonoBehaviour
         GameObject NPCGO = Instantiate(m_NPCPrefab, m_Canvas.transform);
         m_UIManager.AddToNPCList(NPCGO);
 
+       
+        
         NPC newNPC = NPCGO.GetComponent<NPC>();
         newNPC.Name = GenerateRandomName(npcNumber);
         newNPC.PersonalityTraits = GenerateRandomTraits(m_AllPersonalityTraits);
         newNPC.PhysicalTraits = GenerateRandomTraits(m_AllPhysicalTraits);
         newNPC.Description = GenerateRandomDescription(newNPC.Name, newNPC.PersonalityTraits);
-       
+
+        NPCView newNPCView = NPCGO.GetComponent<NPCView>();
+        newNPCView.spawnface();
+        _FaceGenerator.GenerateFace(npcNumber,newNPC, newNPCView.m_NPCFaceSpawned.GetComponent<NpcFaceView>());
         return newNPC;
     }
 

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ceddba90a5a46246a4d4640f468cd09, type: 3}
+  m_Name: Face eye 7
+  m_EditorClassIdentifier: 
+  m_AssetSprite: {fileID: 21300000, guid: 5129760735ee9f24d90d974ac75c16d0, type: 3}
+  m_AssetType: 1
+  m_Traits:
+  - {fileID: 11400000, guid: 70bbe96e326ab8e47b4923ff4370a0de, type: 2}
+  - {fileID: 11400000, guid: 1db521147a1c168428186f64d960907b, type: 2}
+  - {fileID: 11400000, guid: fd0e362e7f9f800489b6d5d0eee69ce9, type: 2}

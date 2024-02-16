@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ceddba90a5a46246a4d4640f468cd09, type: 3}
+  m_Name: Face Mouth 10
+  m_EditorClassIdentifier: 
+  m_AssetSprite: {fileID: 21300000, guid: 04863ec7378f02c49b654f42ba2dd92a, type: 3}
+  m_AssetType: 2
+  m_Traits:
+  - {fileID: 11400000, guid: 320828e015c5be1428b09ba4faa5da12, type: 2}
+  - {fileID: 11400000, guid: 2b73a3e9920f53941bfd16330ff96596, type: 2}

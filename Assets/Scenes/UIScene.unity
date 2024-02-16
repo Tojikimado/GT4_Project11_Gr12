@@ -526,6 +526,7 @@ MonoBehaviour:
   - {fileID: 1078141404}
   - {fileID: 562646409}
   seed: {fileID: 1060134510}
+  _FaceGenerator: {fileID: 0}
 --- !u!114 &869531226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,7 +554,19 @@ MonoBehaviour:
   seed: 0
   SepSeed: 
   refNpc: {fileID: 0}
-  Assets: []
+  BaseList: []
+  Assets:
+  - {fileID: 11400000, guid: 78fb9d5023cc8994398cf42a1d3ea336, type: 2}
+  - {fileID: 11400000, guid: 3f91956a4e8c22f4594fb8a77bd2d0ad, type: 2}
+  - {fileID: 11400000, guid: 5beababc77dfddf44a85516a0d2920b1, type: 2}
+  - {fileID: 11400000, guid: 85468d25345d4b649882b81757785701, type: 2}
+  - {fileID: 11400000, guid: 4b6094bbcbbe2d249aef4583f8e50734, type: 2}
+  - {fileID: 11400000, guid: 5071de4db315e204f893a0dac736fa64, type: 2}
+  - {fileID: 11400000, guid: 4d8a04fe36fdcaa4e824cdcedcb0c050, type: 2}
+  - {fileID: 11400000, guid: aee110c159bcbc14e95c18d489509512, type: 2}
+  - {fileID: 11400000, guid: 24ff0bbe3c0b8cf45bf02e97d1cc6501, type: 2}
+  - {fileID: 11400000, guid: 98faf439dde799643acf1f156ceedd79, type: 2}
+  - {fileID: 11400000, guid: d54d8bb830e41344ba619d455d503e2a, type: 2}
 --- !u!1 &898699734
 GameObject:
   m_ObjectHideFlags: 0

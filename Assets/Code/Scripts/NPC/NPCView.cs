@@ -13,6 +13,10 @@ public class NPCView : MonoBehaviour
     [SerializeField] private GameObject DescObject;
     [SerializeField] private GameObject TraitBOX;
 
+    [SerializeField] private GameObject m_NPCFacePrefab;
+    [SerializeField] public GameObject m_NPCFaceSpawned;
+    [SerializeField] private GameObject m_Canvas;
+
 
     public Vector3 SlotPos;
 
@@ -34,7 +38,10 @@ public class NPCView : MonoBehaviour
         }
         m_DescriptionText.text = MyNPC.Description;
     }
-
+    public void spawnface()
+    {
+        m_NPCFaceSpawned = Instantiate(m_NPCFacePrefab, m_Canvas.transform);
+    }
 
     public void ShowthisNPC()
     {
