@@ -554,8 +554,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c4f28b22e8d72584f88506b00165ac47, type: 2}
   - {fileID: 11400000, guid: 5a9e7e995ab1c644b840be72af4b98cd, type: 2}
   - {fileID: 11400000, guid: 5c38f03ccb3b1184b87301bdd8ba01bf, type: 2}
-  m_AllPhysicalTraits:
+  m_NPCSex:
+  - {fileID: 11400000, guid: 0cce0f8b42ae5fd46bbe885e6da7c9f1, type: 2}
   - {fileID: 11400000, guid: c22ac9740ff393244876db870f90341e, type: 2}
+  m_NPCEyes:
+  - {fileID: 11400000, guid: fcbf2e288d2316748b12a437ee3c05ae, type: 2}
+  - {fileID: 11400000, guid: 70bbe96e326ab8e47b4923ff4370a0de, type: 2}
+  - {fileID: 11400000, guid: f698a4c0f1075c44c8d62346dc14abde, type: 2}
+  m_NPCHair:
+  - {fileID: 11400000, guid: 7991253fd4fbb004da71f5302d799e3c, type: 2}
+  - {fileID: 11400000, guid: 060f3ec1636cec640a14cb7e2c7a57c0, type: 2}
+  - {fileID: 11400000, guid: e0b13f76052f23e45864799b7ccb14ec, type: 2}
+  m_PhysicalTraits:
+  - {fileID: 11400000, guid: e2dd8397d1791084ebf8b65974daada2, type: 2}
+  - {fileID: 11400000, guid: 20a378c00f774944c9687da5fde51156, type: 2}
+  - {fileID: 11400000, guid: 6fa29819845c22d4790d6eab65cc86df, type: 2}
+  - {fileID: 11400000, guid: 17245ab8832422346b34ed5635628c40, type: 2}
+  - {fileID: 11400000, guid: d623360d9db4b6549b0f5875535e4834, type: 2}
+  - {fileID: 11400000, guid: 0bf1114bcc0db5c4996b23f345e7bd48, type: 2}
+  - {fileID: 11400000, guid: 344cd883d0b1b674ab4af92f12dbcf1a, type: 2}
   m_NPCToGenerate: 6
   m_NPCPrefab: {fileID: 3757790783535995254, guid: 5560c53f9d49d0144812e425c6cd2ca4, type: 3}
   m_Canvas: {fileID: 1902738127}
