@@ -579,6 +579,7 @@ MonoBehaviour:
   m_UIManager: {fileID: 869531225}
   m_Seed: 0
   _FaceGenerator: {fileID: 869531227}
+  tmp: []
 --- !u!4 &869531224
 Transform:
   m_ObjectHideFlags: 0
@@ -615,7 +616,6 @@ MonoBehaviour:
   - {fileID: 1078141404}
   - {fileID: 562646409}
   seed: {fileID: 1060134510}
-  _FaceGenerator: {fileID: 0}
 --- !u!114 &869531226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,6 +657,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 24ff0bbe3c0b8cf45bf02e97d1cc6501, type: 2}
   - {fileID: 11400000, guid: 98faf439dde799643acf1f156ceedd79, type: 2}
   - {fileID: 11400000, guid: d54d8bb830e41344ba619d455d503e2a, type: 2}
+  - {fileID: 11400000, guid: 29abd7829b33f4447b845940ec8d3cf7, type: 2}
+  - {fileID: 11400000, guid: 3664b67c12a57d04ea73f9907f446de8, type: 2}
+  - {fileID: 11400000, guid: 6f86ad974b38ed6478eabf5eddc30a8e, type: 2}
+  - {fileID: 11400000, guid: 86c6712b598ae494797faabd30655b25, type: 2}
+  - {fileID: 11400000, guid: 03037c968e81e3a48bac9a9a7c4a51b3, type: 2}
+  - {fileID: 11400000, guid: 1c600f979d5fb984c830a1eb373d3054, type: 2}
+  - {fileID: 11400000, guid: 76ab7e1317a2c5340887f20de8136340, type: 2}
+  - {fileID: 11400000, guid: 62c498057b597774ca741a29d2feca2e, type: 2}
+  - {fileID: 11400000, guid: 357f66b49bf3ec34c985c0f5aa423cfe, type: 2}
 --- !u!1 &898699734
 GameObject:
   m_ObjectHideFlags: 0
