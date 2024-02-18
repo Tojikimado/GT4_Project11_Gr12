@@ -8,7 +8,12 @@ using System.Globalization;
 public class NPCManager : MonoBehaviour
 {
     [SerializeField] private List<TraitSO> m_AllPersonalityTraits;
-    [SerializeField] private List<TraitSO> m_AllPhysicalTraits;
+    
+    [SerializeField] private List<TraitSO> m_NPCSex;
+    [SerializeField] private List<TraitSO> m_NPCEyes;
+    [SerializeField] private List<TraitSO> m_NPCHair;
+    [SerializeField] private List<TraitSO> m_PhysicalTraits;
+
     [SerializeField] private int m_NPCToGenerate = 6;
     [SerializeField] private GameObject m_NPCPrefab;
     [SerializeField] private GameObject m_Canvas;
@@ -20,6 +25,10 @@ public class NPCManager : MonoBehaviour
     private SentencesTemplates m_SentencesTemplates;
 
     public List<TraitSO> AllPersonalityTraits { get => m_AllPersonalityTraits; set => m_AllPersonalityTraits = value; }
+    public List<TraitSO> PhysicalTraits { get => m_PhysicalTraits; set => m_PhysicalTraits = value; }
+    public List<TraitSO> NPCSex { get => m_NPCSex; set => m_NPCSex = value; }
+    public List<TraitSO> NPCEyes { get => m_NPCEyes; set => m_NPCEyes = value; }
+    public List<TraitSO> NPCHair { get => m_NPCHair; set => m_NPCHair = value; }
 
     private void Start()
     {
@@ -54,14 +63,12 @@ public class NPCManager : MonoBehaviour
     NPC CreateNPC(int npcNumber)
     {
         GameObject NPCGO = Instantiate(m_NPCPrefab, m_Canvas.transform);
-        m_UIManager.AddToNPCList(NPCGO);
-
-       
+        m_UIManager.AddToNPCList(NPCGO);       
         
         NPC newNPC = NPCGO.GetComponent<NPC>();
         newNPC.Name = GenerateRandomName(npcNumber);
-        newNPC.PersonalityTraits = GenerateRandomTraits(AllPersonalityTraits);
-        newNPC.PhysicalTraits = GenerateRandomTraits(m_AllPhysicalTraits);
+        newNPC.PersonalityTraits = GenerateRandomPersonalityTraits();
+        newNPC.PhysicalTraits = GenerateRandomPhysicalTraits();
         newNPC.Description = GenerateRandomDescription(newNPC.Name, newNPC.PersonalityTraits);
 
         NPCView newNPCView = NPCGO.GetComponent<NPCView>();
@@ -78,13 +85,30 @@ public class NPCManager : MonoBehaviour
         return "NPC " + npcNumber;
     }
 
-    List<TraitSO> GenerateRandomTraits(List<TraitSO> allTraits)
+    private List<TraitSO> GenerateRandomPhysicalTraits()
+    {
+        List<TraitSO> randomTraits = new List<TraitSO>();
+
+        TraitSO npcSex = NPCSex[Random.Range(0, NPCSex.Count)];
+        TraitSO npcEyes = NPCEyes[Random.Range(0, NPCEyes.Count)];
+        TraitSO npcHair = NPCHair[Random.Range(0, NPCHair.Count)];
+        TraitSO npcTrait = PhysicalTraits[Random.Range(0, PhysicalTraits.Count)];
+
+        randomTraits.Add(npcSex);
+        randomTraits.Add(npcEyes); 
+        randomTraits.Add(npcHair);
+        randomTraits.Add(npcTrait);
+
+        return randomTraits;
+    }
+
+    List<TraitSO> GenerateRandomPersonalityTraits()
     {
         List<TraitSO> randomTraits = new List<TraitSO>();
 
         while (randomTraits.Count < 3)
         {
-            TraitSO randomTrait = allTraits[Random.Range(0, allTraits.Count)];
+            TraitSO randomTrait = AllPersonalityTraits[Random.Range(0, AllPersonalityTraits.Count)];
 
             bool hasConflict = false;
             foreach (TraitSO selectedTrait in randomTraits)
@@ -94,8 +118,12 @@ public class NPCManager : MonoBehaviour
                     hasConflict = true;
                     break;
                 }
+                if (randomTraits.Contains(randomTrait))
+                {
+                    hasConflict = true;
+                    break;
+                }
             }
-
             if (!hasConflict)
                 randomTraits.Add(randomTrait);
         }
