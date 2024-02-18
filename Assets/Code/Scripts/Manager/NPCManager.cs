@@ -67,8 +67,8 @@ public class NPCManager : MonoBehaviour
         NPCView newNPCView = NPCGO.GetComponent<NPCView>();
         newNPCView.spawnface();
         _FaceGenerator.GenerateFace(npcNumber,newNPC, newNPCView.m_NPCFaceSpawned.GetComponent<NpcFaceView>());
-        npcView.SetDropDown(AllPersonalityTraits);
-        npcView.NPCManager = this;
+        newNPCView.SetDropDown(AllPersonalityTraits);
+        newNPCView.NPCManager = this;
 
         return newNPC;
     }

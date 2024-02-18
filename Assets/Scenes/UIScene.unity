@@ -625,17 +625,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: 0
   SepSeed: 
-  refNpc: {fileID: 0}
+  refNpc: {fileID: 850336842573862204, guid: 5560c53f9d49d0144812e425c6cd2ca4, type: 3}
   BaseList: []
+  TraitVieux: {fileID: 11400000, guid: 344cd883d0b1b674ab4af92f12dbcf1a, type: 2}
   Assets:
-  - {fileID: 11400000, guid: 78fb9d5023cc8994398cf42a1d3ea336, type: 2}
-  - {fileID: 11400000, guid: 3f91956a4e8c22f4594fb8a77bd2d0ad, type: 2}
-  - {fileID: 11400000, guid: 5beababc77dfddf44a85516a0d2920b1, type: 2}
-  - {fileID: 11400000, guid: 85468d25345d4b649882b81757785701, type: 2}
-  - {fileID: 11400000, guid: 4b6094bbcbbe2d249aef4583f8e50734, type: 2}
-  - {fileID: 11400000, guid: 5071de4db315e204f893a0dac736fa64, type: 2}
-  - {fileID: 11400000, guid: 4d8a04fe36fdcaa4e824cdcedcb0c050, type: 2}
-  - {fileID: 11400000, guid: aee110c159bcbc14e95c18d489509512, type: 2}
+  - {fileID: 11400000, guid: 2267cd54bf9c637479542bfc6206a16d, type: 2}
+  - {fileID: 11400000, guid: 97dd47183f743694fb052b0f2365f93b, type: 2}
+  - {fileID: 11400000, guid: 87d8fbf6f5299ff44aeadd74a76f1e06, type: 2}
+  - {fileID: 11400000, guid: 6744b91539aaf9a42aa713aa463e4117, type: 2}
+  - {fileID: 11400000, guid: f54028ecf88575e4886f100c7354e54b, type: 2}
+  - {fileID: 11400000, guid: e5ba2d7dcceaa364daaf23a73c047694, type: 2}
+  - {fileID: 11400000, guid: 9d30414a33b96ec409a9ca745569d108, type: 2}
+  - {fileID: 11400000, guid: b022c6a2fc5148b46aab62dec22de48e, type: 2}
   - {fileID: 11400000, guid: 24ff0bbe3c0b8cf45bf02e97d1cc6501, type: 2}
   - {fileID: 11400000, guid: 98faf439dde799643acf1f156ceedd79, type: 2}
   - {fileID: 11400000, guid: d54d8bb830e41344ba619d455d503e2a, type: 2}
