@@ -1,0 +1,38 @@
+{
+  "LastNames": [
+    "Dupont",
+    "Martin",
+    "Durand",
+    "Lefebvre",
+    "Dubois",
+    "Moreau",
+    "Lefevre",
+    "Garcia",
+    "Rodriguez",
+    "Fernandez"
+  ],
+  "MenNames": [
+    "Jean",
+    "Pierre",
+    "Paul",
+    "Jacques",
+    "Michel",
+    "David",
+    "Philippe",
+    "Andre",
+    "Thomas",
+    "Nicolas"
+  ],
+  "WomenNames": [
+    "Marie",
+    "Jeanne",
+    "Isabelle",
+    "Sophie",
+    "Julie",
+    "Nathalie",
+    "Catherine",
+    "Sandrine",
+    "Caroline",
+    "Emilie"
+  ]
+}

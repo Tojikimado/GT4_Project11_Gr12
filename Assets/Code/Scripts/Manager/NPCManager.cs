@@ -23,6 +23,7 @@ public class NPCManager : MonoBehaviour
     public List<string> tmp = new List<string>();
 
     private SentencesTemplates m_SentencesTemplates;
+    private NamesData m_NamesData;
 
     public List<TraitSO> AllPersonalityTraits { get => m_AllPersonalityTraits; set => m_AllPersonalityTraits = value; }
     public List<TraitSO> PhysicalTraits { get => m_PhysicalTraits; set => m_PhysicalTraits = value; }
@@ -35,6 +36,7 @@ public class NPCManager : MonoBehaviour
         m_Seed = (int)System.DateTime.Now.Ticks;
         _FaceGenerator.SetUp(m_Seed);
          m_SentencesTemplates = JSONLoader.Instance.LoadSentencesTemplates("TraitsSentences");
+        m_NamesData = JSONLoader.Instance.LoadNamesData("NamesLists");
         GenerateNPCs();
         m_UIManager.UpdateSeed(m_Seed.ToString());
     }
@@ -66,9 +68,9 @@ public class NPCManager : MonoBehaviour
         m_UIManager.AddToNPCList(NPCGO);       
         
         NPC newNPC = NPCGO.GetComponent<NPC>();
-        newNPC.Name = GenerateRandomName(npcNumber);
         newNPC.PersonalityTraits = GenerateRandomPersonalityTraits();
         newNPC.PhysicalTraits = GenerateRandomPhysicalTraits();
+        newNPC.Name = GenerateRandomName(newNPC);
         newNPC.Description = GenerateRandomDescription(newNPC.Name, newNPC.PersonalityTraits);
 
         NPCView newNPCView = NPCGO.GetComponent<NPCView>();
@@ -80,9 +82,28 @@ public class NPCManager : MonoBehaviour
         return newNPC;
     }
 
-    string GenerateRandomName(int npcNumber)
+    string GenerateRandomName(NPC npc)
     {
-        return "NPC " + npcNumber;
+        string fullName;
+        if (DetermineGender(npc))  
+            fullName = m_NamesData.MenNames[Random.Range(0, m_NamesData.MenNames.Count)];
+        else
+            fullName = m_NamesData.WomenNames[Random.Range(0, m_NamesData.WomenNames.Count)];
+
+        fullName += " " + m_NamesData.LastNames[Random.Range(0, m_NamesData.LastNames.Count)];
+
+        return fullName;
+    }
+
+    bool DetermineGender(NPC npc)
+    {
+        foreach (TraitSO trait in npc.PhysicalTraits)
+        {
+            if (trait.Name == "Homme")
+                return true;
+        }
+
+        return false;
     }
 
     private List<TraitSO> GenerateRandomPhysicalTraits()
