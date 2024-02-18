@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.IO;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+
 
 public class JSONLoader : MonoBehaviour
 {
@@ -22,4 +24,6 @@ public class JSONLoader : MonoBehaviour
 
         return sentencesTemplates;
     }
+
+
 }

@@ -95,13 +95,56 @@ public class FaceGenerator : MonoBehaviour
         }
         return EyesList[SepSeed[seedId]];
     }
-
+    private faceAssetSO GenerateRearHair()
+    {
+        List<faceAssetSO> hairList = new List<faceAssetSO>();
+        if (Assets != null)
+        {
+            hairList = GenerateTmpBaseListViaPhysical(AssetType.RearHair);
+        }
+        if(hairList.Count == 0)
+        {
+            return null;
+        }
+        if (SepSeed[seedId] >= hairList.Count)
+        {
+            return hairList[0];
+        }
+        return hairList[SepSeed[seedId]];
+    }
+    private faceAssetSO GenerateFrontHair()
+    {
+        List<faceAssetSO> hairList = new List<faceAssetSO>();
+        if (Assets != null)
+        {
+            hairList = GenerateTmpBaseList(AssetType.FrontHair);
+        }
+        if (hairList.Count == 0)
+        {
+            return null;
+        }
+        if (SepSeed[seedId] >= hairList.Count)
+        {
+            return hairList[0];
+        }
+        return hairList[SepSeed[seedId]];
+    }
 
     public void SpawnFace(NpcFaceView newFace)
     {
         newFace.Base.sprite = GenerateBase().AssetSprite;
         newFace.Mouth.sprite = GenerateMouth().AssetSprite;
         newFace.Eye.sprite = GenerateEye().AssetSprite;
+        faceAssetSO tmp = GenerateRearHair();
+        if (tmp != null)
+        {
+            newFace.RearHair.sprite = tmp.AssetSprite;
+            tmp = GenerateFrontHair(); 
+            newFace.FrontHair.sprite = tmp.AssetSprite;
+            newFace.RearHair.color = new Color32(255, 255, 225, 225);
+            newFace.FrontHair.color = new Color32(255, 255, 225, 225); 
+        }
+            
     }
 
 
@@ -151,9 +194,38 @@ public class FaceGenerator : MonoBehaviour
         return TmpList;
     }
 
+    private List<faceAssetSO> GenerateTmpBaseListViaPhysical(AssetType type)
+    {
+        List<faceAssetSO> TmpList = new List<faceAssetSO>();
+        foreach (var assetSO in Assets)
+        {
+            if (assetSO.Type == type)
+            {
+                if(CheckIfTraitGood2(assetSO))
+                {
+                    TmpList.Add(assetSO);
+                }
+                
 
 
+            }
+        }
+        return TmpList;
+   
+    }
 
+
+    private bool CheckIfTraitGood2(faceAssetSO _assetSO)
+    {
+        foreach (var trait in _assetSO.Traits)
+        {
+            if (refNpc.PhysicalTraits.Contains(trait))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 
     private bool CheckIfTraitGood(faceAssetSO _assetSO)
     {

@@ -9,5 +9,7 @@ public class NpcFaceView : MonoBehaviour
     [SerializeField] public Image Base;
     [SerializeField] public Image Mouth;
     [SerializeField] public Image Eye;
+    [SerializeField] public Image FrontHair;
+    [SerializeField] public Image RearHair;
 
 }

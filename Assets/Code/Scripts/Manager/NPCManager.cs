@@ -20,7 +20,7 @@ public class NPCManager : MonoBehaviour
     [SerializeField] private UIManager m_UIManager;
     [SerializeField] private int m_Seed;
     [SerializeField] private FaceGenerator _FaceGenerator;
-
+    public List<string> tmp = new List<string>();
 
     private SentencesTemplates m_SentencesTemplates;
 

@@ -10,7 +10,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private List<GameObject> m_NPCList;
     [SerializeField] private List<Transform> m_placeHolder;
     [SerializeField] private TMP_InputField seed;
-    [SerializeField] private FaceGenerator _FaceGenerator;
 
     void Awake()
     {

@@ -5,7 +5,9 @@ public enum AssetType
 {
     Base,
     Eyes,
-    Mouth
+    Mouth,
+    FrontHair,
+    RearHair,
 }
 
 [CreateAssetMenu(fileName = "New assets flie", menuName = "face/New face assets")]
