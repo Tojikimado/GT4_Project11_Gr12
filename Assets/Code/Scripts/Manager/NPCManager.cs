@@ -36,7 +36,7 @@ public class NPCManager : MonoBehaviour
     {
         m_Seed = (int)System.DateTime.Now.Ticks;
         _FaceGenerator.SetUp(m_Seed);
-         m_SentencesTemplates = JSONLoader.Instance.LoadSentencesTemplates("TraitsSentences");
+        m_SentencesTemplates = JSONLoader.Instance.LoadSentencesTemplates("TraitsSentences");
         m_NamesData = JSONLoader.Instance.LoadNamesData("NamesLists");
         GenerateNPCs();
         m_UIManager.UpdateSeed(m_Seed.ToString());

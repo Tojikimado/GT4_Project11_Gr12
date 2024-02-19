@@ -21,18 +21,15 @@ public class JSONLoader : MonoBehaviour
 
     public SentencesTemplates LoadSentencesTemplates(string fileName)
     {
-        string jsonFilePath = Path.Combine(Application.dataPath, "Resources", fileName + ".json");
-        string jsonString = File.ReadAllText(jsonFilePath, Encoding.UTF8);
-        SentencesTemplates sentencesTemplates = JsonConvert.DeserializeObject<SentencesTemplates>(jsonString);
-
+        TextAsset jsonFile = Resources.Load<TextAsset>(fileName);
+        SentencesTemplates sentencesTemplates = JsonConvert.DeserializeObject<SentencesTemplates>(jsonFile.text);
         return sentencesTemplates;
     }
 
     public NamesData LoadNamesData(string fileName)
     {
-        string jsonFilePath = Path.Combine(Application.dataPath, "Resources", fileName + ".json");
-        string jsonString = File.ReadAllText(jsonFilePath, Encoding.UTF8);
-        NamesData namesData = JsonConvert.DeserializeObject<NamesData>(jsonString);
+        TextAsset jsonFile = Resources.Load<TextAsset>(fileName);
+        NamesData namesData = JsonConvert.DeserializeObject<NamesData>(jsonFile.text);
 
         return namesData;
     }
