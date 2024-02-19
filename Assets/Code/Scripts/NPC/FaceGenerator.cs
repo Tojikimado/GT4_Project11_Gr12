@@ -7,35 +7,35 @@ using UnityEngine;
 public class FaceGenerator : MonoBehaviour
 {
     [SerializeField] 
-    private List<faceAssetSO> Assets;
-    private List<int> SeparatedSeed = new List<int>();
-    public NPC refNpc;
+    private List<faceAssetSO> m_Assets;
+    private List<int> m_SeparatedSeed = new List<int>();
+    public NPC RefNpc;
     public List<faceAssetSO> BaseList = new List<faceAssetSO>();
     public TraitSO TraitVieux;
     
-    private int seedId;
+    private int m_SeedId;
 
     public void GenerateFace(int id,NPC newNpc, NpcFaceView newFace)
     {
-        refNpc = newNpc;
-        seedId = id;
+        RefNpc = newNpc;
+        m_SeedId = id;
         SpawnFace(newFace);
     }
     public void SetUp(int _seed)
     {
         for (int i = 0; i < Mathf.Abs(_seed).ToString().Length; i++)
         {
-            SeparatedSeed.Add((int)Char.GetNumericValue(Mathf.Abs(_seed).ToString()[i]));
+            m_SeparatedSeed.Add((int)Char.GetNumericValue(Mathf.Abs(_seed).ToString()[i]));
         }
     }
 
     private faceAssetSO GenerateBase()
     {
-        if (Assets != null)
+        if (m_Assets != null)
         {
             BaseList = GenerateTmpBaseList(AssetType.Base);
 
-            if (refNpc.PhysicalTraits.Contains(TraitVieux))
+            if (RefNpc.PhysicalTraits.Contains(TraitVieux))
             {
                 for (int i = BaseList.Count - 1; i >= 0; i--)
                 {
@@ -57,46 +57,46 @@ public class FaceGenerator : MonoBehaviour
             }
         }
 
-        if (SepSeed[seedId] >= BaseList.Count)
+        if (m_SeparatedSeed[m_SeedId] >= BaseList.Count)
         {
             return BaseList[0];
         }
-        return BaseList[SepSeed[seedId]];
+        return BaseList[m_SeparatedSeed[m_SeedId]];
     }
 
     private faceAssetSO GenerateMouth()
     {
         List<faceAssetSO> MouthList = new List<faceAssetSO>();
 
-        if (Assets != null)
+        if (m_Assets != null)
         {
             MouthList = GenerateTmpList(AssetType.Mouth);
         }
 
 
-        if (SepSeed[seedId] >= MouthList.Count)
+        if (m_SeparatedSeed[m_SeedId] >= MouthList.Count)
         {
             return MouthList[0];
         }
-        return MouthList[SepSeed[seedId]]; ;
+        return MouthList[m_SeparatedSeed[m_SeedId]]; ;
     }
     private faceAssetSO GenerateEye()
     {
         List<faceAssetSO> EyesList = new List<faceAssetSO>();
-        if (Assets != null)
+        if (m_Assets != null)
         {
             EyesList = GenerateTmpList(AssetType.Eyes);
         }
-        if (SepSeed[seedId] >= EyesList.Count)
+        if (m_SeparatedSeed[m_SeedId] >= EyesList.Count)
         {
             return EyesList[0];
         }
-        return EyesList[SepSeed[seedId]];
+        return EyesList[m_SeparatedSeed[m_SeedId]];
     }
     private faceAssetSO GenerateRearHair()
     {
         List<faceAssetSO> hairList = new List<faceAssetSO>();
-        if (Assets != null)
+        if (m_Assets != null)
         {
             hairList = GenerateTmpBaseListViaPhysical(AssetType.RearHair);
         }
@@ -104,16 +104,16 @@ public class FaceGenerator : MonoBehaviour
         {
             return null;
         }
-        if (SepSeed[seedId] >= hairList.Count)
+        if (m_SeparatedSeed[m_SeedId] >= hairList.Count)
         {
             return hairList[0];
         }
-        return hairList[SepSeed[seedId]];
+        return hairList[m_SeparatedSeed[m_SeedId]];
     }
     private faceAssetSO GenerateFrontHair()
     {
         List<faceAssetSO> hairList = new List<faceAssetSO>();
-        if (Assets != null)
+        if (m_Assets != null)
         {
             hairList = GenerateTmpBaseList(AssetType.FrontHair);
         }
@@ -121,11 +121,11 @@ public class FaceGenerator : MonoBehaviour
         {
             return null;
         }
-        if (SepSeed[seedId] >= hairList.Count)
+        if (m_SeparatedSeed[m_SeedId] >= hairList.Count)
         {
             return hairList[0];
         }
-        return hairList[SepSeed[seedId]];
+        return hairList[m_SeparatedSeed[m_SeedId]];
     }
 
     public void SpawnFace(NpcFaceView newFace)
@@ -150,7 +150,7 @@ public class FaceGenerator : MonoBehaviour
     private List<faceAssetSO> GenerateTmpList(AssetType type)
     {
         List<faceAssetSO> TmpList = new List<faceAssetSO>();
-        foreach (var assetSO in Assets)
+        foreach (var assetSO in m_Assets)
         {
             if (assetSO.Type == type)
             {
@@ -162,7 +162,7 @@ public class FaceGenerator : MonoBehaviour
         }
         if(TmpList.Count == 0)
         {
-            foreach (var assetSO in Assets)
+            foreach (var assetSO in m_Assets)
             {
                 if (assetSO.Type == type)
                 {
@@ -175,7 +175,7 @@ public class FaceGenerator : MonoBehaviour
     private List<faceAssetSO> GenerateTmpBaseList(AssetType type)
     {
         List<faceAssetSO> TmpList = new List<faceAssetSO>();
-        foreach (var assetSO in Assets)
+        foreach (var assetSO in m_Assets)
         {
             if (assetSO.Type == type)
             {
@@ -187,7 +187,7 @@ public class FaceGenerator : MonoBehaviour
     private List<faceAssetSO> GenerateTmpBaseListViaPhysical(AssetType type)
     {
         List<faceAssetSO> TmpList = new List<faceAssetSO>();
-        foreach (var assetSO in Assets)
+        foreach (var assetSO in m_Assets)
         {
             if (assetSO.Type == type)
             {
@@ -205,7 +205,7 @@ public class FaceGenerator : MonoBehaviour
     {
         foreach (var trait in _assetSO.Traits)
         {
-            if (refNpc.PhysicalTraits.Contains(trait))
+            if (RefNpc.PhysicalTraits.Contains(trait))
             {
                 return true;
             }
@@ -216,7 +216,7 @@ public class FaceGenerator : MonoBehaviour
     {
         foreach (var trait in _assetSO.Traits)
         {
-            if(refNpc.PersonalityTraits.Contains(trait))
+            if(RefNpc.PersonalityTraits.Contains(trait))
             {
                 return true;
             }

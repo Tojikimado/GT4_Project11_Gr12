@@ -10,7 +10,7 @@ public enum AssetType
     RearHair,
 }
 
-[CreateAssetMenu(fileName = "New assets flie", menuName = "face/New face assets")]
+[CreateAssetMenu(fileName = "New face asset", menuName = "Face/New face asset")]
 public class faceAssetSO : ScriptableObject
 {
     [SerializeField] private Sprite m_AssetSprite;

@@ -8,8 +8,8 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance {  get; private set; }
     
     [SerializeField] private List<GameObject> m_NPCList;
-    [SerializeField] private List<Transform> m_placeHolder;
-    [SerializeField] private TMP_InputField seed;
+    [SerializeField] private List<Transform> m_PlaceHolder;
+    [SerializeField] private TMP_InputField m_Seed;
 
     void Awake()
     {
@@ -30,14 +30,14 @@ public class UIManager : MonoBehaviour
     }
     public void UpdateSeed(string tmp)
     {
-        seed.text = tmp;
+        m_Seed.text = tmp;
     }
     public void PlaceNPC()
     {
         for(int i = 0; i< m_NPCList.Count; i++)
         {
-            m_NPCList[i].transform.localPosition = m_placeHolder[i].localPosition;
-            m_NPCList[i].GetComponent<NPCView>().SlotPos = m_placeHolder[i].localPosition;
+            m_NPCList[i].transform.localPosition = m_PlaceHolder[i].localPosition;
+            m_NPCList[i].GetComponent<NPCView>().SlotPos = m_PlaceHolder[i].localPosition;
         }
     }
 

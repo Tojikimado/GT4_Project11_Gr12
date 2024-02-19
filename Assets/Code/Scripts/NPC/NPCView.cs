@@ -11,12 +11,12 @@ public class NPCView : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_DescriptionText;
     [SerializeField] private List<TMP_Dropdown> m_PersonalityTraitsList;
     [SerializeField] private List<TextMeshProUGUI> m_PhysicalTraitsList;
-    [SerializeField] private NPC MyNPC;
-    [SerializeField] private GameObject DescObject;
-    [SerializeField] private GameObject TraitBOX;
+    [SerializeField] private NPC m_MyNPC;
+    [SerializeField] private GameObject m_DescObject;
+    [SerializeField] private GameObject m_TraitBOX;
 
     [SerializeField] private GameObject m_NPCFacePrefab;
-    [SerializeField] public GameObject m_NPCFaceSpawned;
+    [SerializeField] public GameObject NPCFaceSpawned;
     [SerializeField] private GameObject m_Canvas;
 
 
@@ -29,31 +29,31 @@ public class NPCView : MonoBehaviour
 
     public void UpdateNpcView()
     {
-        m_NameText.text = MyNPC.Name;
+        m_NameText.text = m_MyNPC.Name;
 
         for(int i = 0; i< m_PersonalityTraitsList.Count;i++ )
         {
-            int index = m_PersonalityTraitsList[i].options.FindIndex(o => o.text == MyNPC.PersonalityTraits[i].Name);
+            int index = m_PersonalityTraitsList[i].options.FindIndex(o => o.text == m_MyNPC.PersonalityTraits[i].Name);
             m_PersonalityTraitsList[i].value = index;
         }
 
         for (int i = 0; i < m_PhysicalTraitsList.Count; i++)
         {
-            m_PhysicalTraitsList[i].text = MyNPC.PhysicalTraits[i].Name;
+            m_PhysicalTraitsList[i].text = m_MyNPC.PhysicalTraits[i].Name;
         }
-        m_DescriptionText.text = MyNPC.Description;
+        m_DescriptionText.text = m_MyNPC.Description;
     }
     public void spawnface()
     {
-        m_NPCFaceSpawned = Instantiate(m_NPCFacePrefab, m_Canvas.transform);
+        NPCFaceSpawned = Instantiate(m_NPCFacePrefab, m_Canvas.transform);
     }
 
     public void ShowthisNPC()
     {
         IsFocused = !IsFocused;
         UIManager.Instance.ShowSelected(gameObject, IsFocused);
-        DescObject.SetActive(!DescObject.activeSelf);
-        TraitBOX.SetActive(!TraitBOX.activeSelf);
+        m_DescObject.SetActive(!m_DescObject.activeSelf);
+        m_TraitBOX.SetActive(!m_TraitBOX.activeSelf);
     }
 
     public void RegenDescription()
