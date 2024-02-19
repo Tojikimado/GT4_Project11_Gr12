@@ -1,513 +1,513 @@
-{
+{//pronounP1 = il/elle pronounP2 = lui/elle pronounC = le/la
   "TraitsSentences": {
     "Ambitieux": {
       "Past": [
-        "Il a toujours eu de grands rêves.",
+        "$pronounP1 a toujours eu de grands rêves.",
         "Ses ambitions l'ont mené loin dans le passé.",
-        "Il a réalisé de grandes choses grâce à son ambition."
+        "$pronounP1 a réalisé de grandes choses grâce à son ambition."
       ],
       "Present": [
-        "Il poursuit ses objectifs avec détermination.",
-        "Son ambition le pousse à viser toujours plus haut.",
-        "Il travaille dur pour atteindre ses ambitions."
+        "$pronounP1 poursuit ses objectifs avec détermination.",
+        "Son ambition $pronounC pousse à viser toujours plus haut.",
+        "$pronoun travaille dur pour atteindre ses ambitions."
       ],
       "Futur": [
-        "Il envisage un avenir rempli de succès et de réalisations.",
-        "Ses ambitions le conduiront vers de nouveaux horizons.",
-        "Il sait que son ambition le mènera loin."
+        "$pronounP1 envisage un avenir rempli de succès et de réalisations.",
+        "Ses ambitions $pronounC conduiront vers de nouveaux horizons.",
+        "$pronounP1 sait que son ambition $pronounC mènera loin."
       ]
     },
     "Modeste": {
       "Past": [
-        "Il n'a jamais cherché à se mettre en avant.",
+        "$pronounP1 n'a jamais cherché à se mettre en avant.",
         "La modestie a toujours été une de ses qualités.",
-        "Il a toujours su rester humble malgré ses succès."
+        "$pronounP1 a toujours su rester humble malgré ses succès."
       ],
       "Present": [
-        "Il préfère rester discret sur ses réalisations.",
+        "$pronounP1 préfère rester discret sur ses réalisations.",
         "La modestie fait partie de sa personnalité.",
-        "Il évite de se vanter de ses succès."
+        "$pronounP1 évite de se vanter de ses succès."
       ],
       "Futur": [
-        "Il continuera à rester humble malgré ses réussites.",
+        "$pronounP1 continuera à rester humble malgré ses réussites.",
         "La modestie restera une de ses valeurs principales dans le futur.",
-        "Il saura garder les pieds sur terre malgré son succès."
+        "$pronounP1 saura garder les pieds sur terre malgré son succès."
       ]
     },
     "Aventureux": {
       "Past": [
-        "Il a exploré de nombreux endroits dans sa jeunesse.",
+        "$pronounP1 a exploré de nombreux endroits dans sa jeunesse.",
         "Les aventures ont toujours été une grande partie de sa vie.",
-        "Il a souvent pris des risques et découvert de nouvelles expériences."
+        "$pronounP1 a souvent pris des risques et découvert de nouvelles expériences."
       ],
       "Present": [
-        "Il est toujours prêt à relever de nouveaux défis.",
+        "$pronounP1 est toujours prêt à relever de nouveaux défis.",
         "L'envie d'aventure l'anime toujours.",
-        "Il est connu pour sa témérité et son courage."
+        "$pronounP1 est connu pour sa témérité et son courage."
       ],
       "Futur": [
-        "Il imagine un futur rempli d'explorations et d'aventures.",
+        "$pronounP1 imagine un futur rempli d'explorations et d'aventures.",
         "Les aventures continueront à faire partie intégrante de sa vie.",
-        "Il sait que de nombreuses découvertes l'attendent dans le futur."
+        "$pronounP1 sait que de nombreuses découvertes l'attendent dans le futur."
       ]
     },
     "Prudent": {
       "Past": [
-        "Il a toujours pris des décisions calculées.",
+        "$pronounP1 a toujours pris des décisions calculées.",
         "La prudence a souvent guidé ses actions dans le passé.",
-        "Il a évité de nombreux dangers grâce à sa prudence."
+        "$pronounP1 a évité de nombreux dangers grâce à sa prudence."
       ],
       "Present": [
-        "Il prend toujours le temps de réfléchir avant d'agir.",
-        "La prudence est une qualité qu'il met en avant dans ses choix.",
-        "Il préfère jouer la sécurité plutôt que de prendre des risques inutiles."
+        "$pronounP1 prend toujours le temps de réfléchir avant d'agir.",
+        "La prudence est une qualité qu'$pronounP1 met en avant dans ses choix.",
+        "$pronounP1 préfère jouer la sécurité plutôt que de prendre des risques inutiles."
       ],
       "Futur": [
-        "Il continuera à faire preuve de prudence dans ses décisions.",
+        "$pronounP1 continuera à faire preuve de prudence dans ses décisions.",
         "La prudence sera toujours une de ses qualités dans le futur.",
-        "Il sait que sa prudence lui évitera bien des ennuis."
+        "$pronounP1 sait que sa prudence lui évitera bien des ennuis."
       ]
     },
     "Introverti": {
       "Past": [
-        "Il a toujours préféré la solitude à la foule.",
-        "Les moments de calme étaient importants pour lui dans le passé.",
-        "Il s'est souvent retrouvé seul pour se ressourcer."
+        "$pronounP1 a toujours préféré la solitude à la foule.",
+        "Les moments de calme étaient importants pour $pronounP2 dans le passé.",
+        "$pronounP1 s'est souvent retrouvé seul pour se ressourcer."
       ],
       "Present": [
-        "Il se sent à l'aise en solitaire.",
+        "$pronounP1 se sent à l'aise en solitaire.",
         "La solitude lui permet de se concentrer et de se retrouver.",
-        "Il apprécie les moments de silence et de réflexion."
+        "$pronounP1 apprécie les moments de silence et de réflexion."
       ],
       "Futur": [
-        "Il continuera à rechercher des moments de solitude dans le futur.",
-        "La tranquillité sera toujours importante pour lui.",
-        "Il sait que la solitude lui permettra de se ressourcer et de se retrouver."
+        "$pronounP1 continuera à rechercher des moments de solitude dans le futur.",
+        "La tranquillité sera toujours importante pour $pronounP2.",
+        "$pronounP1 sait que la solitude lui permettra de se ressourcer et de se retrouver."
       ]
     },
     "Extraverti": {
       "Past": [
-        "Il a toujours été à l'aise en société.",
-        "Les interactions sociales étaient importantes pour lui dans le passé.",
-        "Il a toujours été le centre de l'attention lors des événements sociaux."
+        "$pronounP1 a toujours été à l'aise en société.",
+        "Les interactions sociales étaient importantes pour $pronounP2 dans le passé.",
+        "$pronounP1 a toujours été le centre de l'attention lors des événements sociaux."
       ],
       "Present": [
-        "Il est toujours entouré d'amis et de connaissances.",
-        "Les interactions sociales sont une source d'énergie pour lui.",
-        "Il est connu pour son charisme et sa sociabilité."
+        "$pronounP1 est toujours entouré d'amis et de connaissances.",
+        "Les interactions sociales sont une source d'énergie pour $pronounP2.",
+        "$pronounP1 est connu pour son charisme et sa sociabilité."
       ],
       "Futur": [
-        "Il imagine un futur rempli de rencontres et d'événements sociaux.",
+        "$pronounP1 imagine un futur rempli de rencontres et d'événements sociaux.",
         "Les interactions sociales continueront à occuper une place centrale dans sa vie.",
-        "Il sait que son cercle social restera important pour lui dans le futur."
+        "$pronounP1 sait que son cercle social restera important pour $pronounP2 dans le futur."
       ]
     },
     "Optimiste": {
       "Past": [
-        "Il a toujours vu le verre à moitié plein.",
+        "$pronounP1 a toujours vu le verre à moitié plein.",
         "Son optimisme lui a permis de surmonter de nombreux obstacles.",
-        "Il a cultivé son optimisme depuis longtemps."
+        "$pronounP1 a cultivé son optimisme depuis longtemps."
       ],
       "Present": [
-        "Il garde espoir même dans les situations difficiles.",
+        "$pronounP1 garde espoir même dans les situations difficiles.",
         "Son attitude positive est contagieuse.",
-        "Il voit toujours le bon côté des choses."
+        "$pronounP1 voit toujours le bon côté des choses."
       ],
       "Futur": [
-        "Il imagine un futur lumineux et plein de promesses.",
-        "Son optimisme le guide vers de nouveaux horizons.",
-        "Il sait que son optimisme l'accompagnera dans le futur."
+        "$pronounP1 imagine un futur lumineux et plein de promesses.",
+        "Son optimisme $pronounC guide vers de nouveaux horizons.",
+        "$pronounP1 sait que son optimisme l'accompagnera dans le futur."
       ]
     },
     "Pessimiste": {
       "Past": [
-        "Il a souvent anticipé le pire dans le passé.",
+        "$pronounP1 a souvent anticipé le pire dans le passé.",
         "Son pessimisme l'a parfois empêché de saisir des opportunités.",
-        "Il a toujours vu le côté sombre des choses."
+        "$pronounP1 a toujours vu le côté sombre des choses."
       ],
       "Present": [
-        "Il a du mal à voir le bon côté des situations.",
+        "$pronounP1 a du mal à voir le bon côté des situations.",
         "Son pessimisme peut parfois être décourageant.",
-        "Il a du mal à rester positif face aux défis."
+        "$pronounP1 a du mal à rester positif face aux défis."
       ],
       "Futur": [
-        "Il envisage un futur difficile et incertain.",
+        "$pronounP1 envisage un futur difficile et incertain.",
         "Son pessimisme peut parfois obscurcir son horizon.",
-        "Il sait que surmonter son pessimisme sera un défi pour l'avenir."
+        "$pronounP1 sait que surmonter son pessimisme sera un défi pour l'avenir."
       ]
     },
     "Genereux": {
       "Past": [
-        "Il a toujours eu le cœur sur la main.",
+        "$pronounP1 a toujours eu le cœur sur la main.",
         "Sa générosité a fait des merveilles par le passé.",
-        "Il a toujours été prêt à donner aux autres."
+        "$pronounP1 a toujours été prêt à donner aux autres."
       ],
       "Present": [
-        "Il est connu pour sa grande générosité.",
-        "Il n'hésite pas à aider ceux qui sont dans le besoin.",
+        "$pronounP1 est connu pour sa grande générosité.",
+        "$pronounP1 n'hésite pas à aider ceux qui sont dans le besoin.",
         "Sa générosité est une qualité qui le distingue des autres."
       ],
       "Futur": [
-        "Il envisage un futur où il pourra continuer à aider les autres.",
+        "$pronounP1 envisage un futur où $pronounP1 pourra continuer à aider les autres.",
         "Sa générosité continuera à éclairer la vie des autres dans le futur.",
-        "Il sait que sa générosité lui apportera beaucoup de bonheur."
+        "$pronounP1 sait que sa générosité lui apportera beaucoup de bonheur."
       ]
     },
     "Egoiste": {
       "Past": [
-        "Il a toujours privilégié ses propres intérêts dans le passé.",
+        "$pronounP1 a toujours privilégié ses propres intérêts dans le passé.",
         "Son égoïsme l'a parfois isolé des autres.",
-        "Il a souvent pensé à lui-même avant les autres."
+        "$pronounP1 a souvent pensé à $pronounP2-même avant les autres."
       ],
       "Present": [
-        "Il a du mal à partager et à penser aux besoins des autres.",
+        "$pronounP1 a du mal à partager et à penser aux besoins des autres.",
         "Son égoïsme peut parfois être blessant pour ceux qui l'entourent.",
-        "Il est connu pour mettre ses propres intérêts en premier."
+        "$pronounP1 est connu pour mettre ses propres intérêts en premier."
       ],
       "Futur": [
-        "Il imagine un futur où il continuera à privilégier ses propres intérêts.",
+        "$pronounP1 imagine un futur où $pronounP1 continuera à privilégier ses propres intérêts.",
         "Son égoïsme pourrait affecter ses relations dans le futur.",
-        "Il sait que son égoïsme peut parfois lui aliéner les autres."
+        "$pronounP1 sait que son égoïsme peut parfois lui aliéner les autres."
       ]
     },
     "Honnete": {
       "Past": [
-        "Il a toujours dit la vérité, même lorsque c'était difficile.",
+        "$pronounP1 a toujours dit la vérité, même lorsque c'était difficile.",
         "Son honnêteté lui a valu le respect des autres.",
-        "Il a toujours été connu pour sa franchise et son intégrité."
+        "$pronounP1 a toujours été connu pour sa franchise et son intégrité."
       ],
       "Present": [
-        "Il est reconnu pour sa sincérité et sa franchise.",
-        "Il préfère dire la vérité, même si cela peut être difficile.",
+        "$pronounP1 est reconnu pour sa sincérité et sa franchise.",
+        "$pronounP1 préfère dire la vérité, même si cela peut être difficile.",
         "Son honnêteté est une qualité qui le distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où il continuera à privilégier l'honnêteté.",
+        "$pronounP1 imagine un futur où $pronounP1 continuera à privilégier l'honnêteté.",
         "Son intégrité restera un pilier de sa personnalité dans le futur.",
-        "Il sait que son honnêteté lui apportera la confiance et le respect des autres."
+        "$pronounP1 sait que son honnêteté lui apportera la confiance et le respect des autres."
       ]
     },
     "Manipulateur": {
       "Past": [
-        "Il a souvent utilisé la manipulation pour parvenir à ses fins.",
+        "$pronounP1 a souvent utilisé la manipulation pour parvenir à ses fins.",
         "Son talent pour la manipulation lui a ouvert de nombreuses portes dans le passé.",
-        "Il a toujours su jouer de ses atouts pour manipuler les autres."
+        "$pronounP1 a toujours su jouer de ses atouts pour manipuler les autres."
       ],
       "Present": [
-        "Il a un don pour influencer les autres à son avantage.",
+        "$pronounP1 a un don pour influencer les autres à son avantage.",
         "Sa capacité de manipulation peut parfois être dangereuse.",
-        "Il est connu pour utiliser la manipulation pour atteindre ses objectifs."
+        "$pronounP1 est connu pour utiliser la manipulation pour atteindre ses objectifs."
       ],
       "Futur": [
-        "Il envisage un futur où il pourra continuer à manipuler les situations à son avantage.",
+        "$pronounP1 envisage un futur où $pronounP1 pourra continuer à manipuler les situations à son avantage.",
         "Sa capacité de manipulation pourrait lui causer des ennuis dans le futur.",
-        "Il sait que la manipulation peut avoir des conséquences néfastes sur ses relations."
+        "$pronounP1 sait que la manipulation peut avoir des conséquences néfastes sur ses relations."
       ]
     },
     "Empathique": {
       "Past": [
-        "Il a toujours su comprendre et ressentir les émotions des autres dans le passé.",
+        "$pronounP1 a toujours su comprendre et ressentir les émotions des autres dans le passé.",
         "Son empathie lui a permis de créer des liens solides avec les autres.",
-        "Il a toujours eu un sens inné de l'empathie."
+        "$pronounP1 a toujours eu un sens inné de l'empathie."
       ],
       "Present": [
-        "Il est reconnu pour son empathie et sa capacité à se mettre à la place des autres.",
-        "Il sait reconnaître et partager les émotions des autres.",
+        "$pronounP1 est reconnu pour son empathie et sa capacité à se mettre à la place des autres.",
+        "$pronounP1 sait reconnaître et partager les émotions des autres.",
         "Son empathie est une qualité qui le distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où son empathie lui permettra de créer des relations profondes et significatives avec les autres.",
+        "$pronounP1 imagine un futur où son empathie lui permettra de créer des relations profondes et significatives avec les autres.",
         "Son empathie lui apportera la compréhension et la compassion dans le futur.",
-        "Il sait que son empathie lui permettra de faire une différence dans la vie des autres."
+        "$pronounP1 sait que son empathie lui permettra de faire une différence dans la vie des autres."
       ]
     },
     "Indifferent": {
       "Past": [
-        "Il a souvent eu du mal à exprimer ou à ressentir des émotions dans le passé.",
+        "$pronounP1 a souvent eu du mal à exprimer ou à ressentir des émotions dans le passé.",
         "Son indifférence lui a parfois valu des critiques de la part des autres.",
-        "Il a toujours préféré rester distant et désengagé des émotions des autres."
+        "$pronounP1 a toujours préféré rester distant et désengagé des émotions des autres."
       ],
       "Present": [
-        "Il a du mal à exprimer de l'intérêt ou de la compassion envers les autres.",
+        "$pronounP1 a du mal à exprimer de l'intérêt ou de la compassion envers les autres.",
         "Son indifférence peut parfois être perçue comme de l'insensibilité.",
-        "Il est connu pour son manque d'émotion et d'implication dans les relations."
+        "$pronounP1 est connu pour son manque d'émotion et d'implication dans les relations."
       ],
       "Futur": [
-        "Il imagine un futur où son indifférence pourrait le maintenir dans un état de solitude et d'isolement.",
+        "$pronounP1 imagine un futur où son indifférence pourrait le maintenir dans un état de solitude et d'isolement.",
         "Son manque d'émotion pourrait affecter ses relations dans le futur.",
-        "Il sait que son indifférence peut parfois le rendre incompris."
+        "$pronounP1 sait que son indifférence peut parfois le rendre incompris."
       ]
     },
     "Patient": {
       "Past": [
-        "Il a toujours su garder son calme dans des situations stressantes dans le passé.",
+        "$pronounP1 a toujours su garder son calme dans des situations stressantes dans le passé.",
         "Sa patience lui a permis de résoudre de nombreux problèmes avec sérénité.",
-        "Il a toujours eu une capacité naturelle à attendre et à persévérer."
+        "$pronounP1 a toujours eu une capacité naturelle à attendre et à persévérer."
       ],
       "Present": [
-        "Il est reconnu pour sa grande patience et sa capacité à rester calme dans les situations difficiles.",
-        "Il sait attendre et persévérer pour obtenir des résultats.",
+        "$pronounP1 est reconnu pour sa grande patience et sa capacité à rester calme dans les situations difficiles.",
+        "$pronounP1 sait attendre et persévérer pour obtenir des résultats.",
         "Sa patience est une qualité qui le distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où sa patience lui permettra de surmonter les obstacles et de réaliser ses rêves.",
+        "$pronounP1 imagine un futur où sa patience lui permettra de surmonter les obstacles et de réaliser ses rêves.",
         "Sa patience lui apportera la sagesse et la tranquillité d'esprit dans le futur.",
-        "Il sait que sa patience lui permettra d'atteindre ses objectifs."
+        "$pronounP1 sait que sa patience lui permettra d'atteindre ses objectifs."
       ]
     },
     "Impatient": {
       "Past": [
-        "Il a souvent eu du mal à attendre dans le passé.",
+        "$pronounP1 a souvent eu du mal à attendre dans le passé.",
         "Son impatience lui a parfois causé des problèmes d'impatience.",
-        "Il a toujours eu du mal à rester calme et patient dans les situations stressantes."
+        "$pronounP1 a toujours eu du mal à rester calme et patient dans les situations stressantes."
       ],
       "Present": [
-        "Il a du mal à attendre et à persévérer pour obtenir des résultats.",
+        "$pronounP1 a du mal à attendre et à persévérer pour obtenir des résultats.",
         "Son impatience peut parfois être perçue comme de l'impatience.",
-        "Il est connu pour son manque de patience et de patience."
+        "$pronounP1 est connu pour son manque de patience et de patience."
       ],
       "Futur": [
-        "Il imagine un futur où son impatience pourrait lui causer des problèmes et des frustrations.",
+        "$pronounP1 imagine un futur où son impatience pourrait lui causer des problèmes et des frustrations.",
         "Son manque de patience pourrait affecter ses relations dans le futur.",
-        "Il sait que son impatience peut parfois le rendre insatisfait."
+        "$pronounP1 sait que son impatience peut parfois le rendre insatisfait."
       ]
     },
     "Curieux": {
       "Past": [
-        "Il a toujours eu soif de connaissances et de découvertes dans le passé.",
+        "$pronounP1 a toujours eu soif de connaissances et de découvertes dans le passé.",
         "Sa curiosité l'a souvent guidé vers de nouvelles expériences et de nouveaux horizons.",
-        "Il a toujours eu un esprit ouvert et avide de nouvelles idées."
+        "$pronounP1 a toujours eu un esprit ouvert et avide de nouvelles idées."
       ],
       "Present": [
-        "Il est reconnu pour sa grande curiosité et son désir d'apprendre.",
-        "Il cherche constamment à découvrir de nouvelles choses et à élargir ses horizons.",
+        "$pronounP1 est reconnu pour sa grande curiosité et son désir d'apprendre.",
+        "$pronounP1 cherche constamment à découvrir de nouvelles choses et à élargir ses horizons.",
         "Sa curiosité est une qualité qui le distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où sa curiosité lui permettra d'explorer de nouveaux domaines et de relever de nouveaux défis.",
+        "$pronounP1 imagine un futur où sa curiosité lui permettra d'explorer de nouveaux domaines et de relever de nouveaux défis.",
         "Sa curiosité lui apportera la richesse de l'expérience et de la connaissance dans le futur.",
-        "Il sait que sa curiosité lui ouvrira de nombreuses portes."
+        "$pronounP1 sait que sa curiosité lui ouvrira de nombreuses portes."
       ]
     },
     "Conservateur": {
       "Past": [
-        "Il a toujours préféré maintenir les traditions et les valeurs établies dans le passé.",
+        "$pronounP1 a toujours préféré maintenir les traditions et les valeurs établies dans le passé.",
         "Son conservatisme lui a permis de rester fidèle à ses convictions et à ses principes.",
-        "Il a toujours eu du mal à accepter le changement et l'innovation."
+        "$pronounP1 a toujours eu du mal à accepter le changement et l'innovation."
       ],
       "Present": [
-        "Il a du mal à accepter les nouvelles idées et les changements radicaux.",
+        "$pronounP1 a du mal à accepter les nouvelles idées et les changements radicaux.",
         "Son conservatisme peut parfois être perçu comme de la résistance au progrès.",
-        "Il est connu pour son attachement aux traditions et aux valeurs établies."
+        "$pronounP1 est connu pour son attachement aux traditions et aux valeurs établies."
       ],
       "Futur": [
-        "Il imagine un futur où son conservatisme pourrait le maintenir dans un état de stagnation et de rigidité.",
+        "$pronounP1 imagine un futur où son conservatisme pourrait le maintenir dans un état de stagnation et de rigidité.",
         "Son attachement aux traditions pourrait limiter ses opportunités dans le futur.",
-        "Il sait que son conservatisme peut parfois le rendre fermé d'esprit."
+        "$pronounP1 sait que son conservatisme peut parfois le rendre fermé d'esprit."
       ]
     },
     "Creatif": {
       "Past": [
-        "Il a toujours eu une imagination débordante dans le passé.",
+        "$pronounP1 a toujours eu une imagination débordante dans le passé.",
         "Sa créativité lui a permis de trouver des solutions uniques et innovantes.",
-        "Il a toujours su penser en dehors des sentiers battus et explorer de nouvelles voies."
+        "$pronounP1 a toujours su penser en dehors des sentiers battus et explorer de nouvelles voies."
       ],
       "Present": [
-        "Il est reconnu pour sa grande créativité et son esprit innovant.",
-        "Il cherche constamment à trouver des solutions originales et créatives.",
-        "Sa créativité est une qualité qui le distingue des autres."
+        "$pronounP1 est reconnu pour sa grande créativité et son esprit innovant.",
+        "$pronounP1 cherche constamment à trouver des solutions originales et créatives.",
+        "Sa créativité est une qualité qui $pronounC distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où sa créativité lui permettra de relever de nouveaux défis et de résoudre de nouveaux problèmes.",
+        "$pronounP1 imagine un futur où sa créativité lui permettra de relever de nouveaux défis et de résoudre de nouveaux problèmes.",
         "Sa créativité lui apportera la capacité d'innover et de s'adapter dans le futur.",
-        "Il sait que sa créativité lui ouvrira de nombreuses possibilités."
+        "$pronounP1 sait que sa créativité lui ouvrira de nombreuses possibilités."
       ]
     },
     "Pragmatique": {
       "Past": [
-        "Il a toujours préféré adopter des approches pratiques et éprouvées dans le passé.",
+        "$pronounP1 a toujours préféré adopter des approches pratiques et éprouvées dans le passé.",
         "Son pragmatisme lui a permis de résoudre de nombreux problèmes avec efficacité.",
-        "Il a toujours eu un esprit logique et rationnel."
+        "$pronounP1 a toujours eu un esprit logique et rationnel."
       ],
       "Present": [
-        "Il est reconnu pour son pragmatisme et sa capacité à trouver des solutions simples et efficaces.",
-        "Il sait adopter une approche réaliste et pratique dans ses activités.",
-        "Son pragmatisme est une qualité qui le distingue des autres."
+        "$pronounP1 est reconnu pour son pragmatisme et sa capacité à trouver des solutions simples et efficaces.",
+        "$pronounP1 sait adopter une approche réaliste et pratique dans ses activités.",
+        "Son pragmatisme est une qualité qui $pronounC distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où son pragmatisme lui permettra de faire face à des défis complexes avec sagesse et discernement.",
+        "$pronounP1 imagine un futur où son pragmatisme lui permettra de faire face à des défis complexes avec sagesse et discernement.",
         "Son approche réaliste lui apportera la clarté et la perspicacité dans le futur.",
-        "Il sait que son pragmatisme lui permettra d'atteindre ses objectifs."
+        "$pronounP1 sait que son pragmatisme lui permettra d'atteindre ses objectifs."
       ]
     },
     "Confiant": {
       "Past": [
-        "Il a toujours eu confiance en ses capacités dans le passé.",
+        "$pronounP1 a toujours eu confiance en ses capacités dans le passé.",
         "Sa confiance en soi lui a permis de relever de nombreux défis.",
-        "Il a toujours su croire en son potentiel."
+        "$pronounP1 a toujours su croire en son potentiel."
       ],
       "Present": [
-        "Il est reconnu pour sa grande confiance en lui-même.",
-        "Il croit en ses capacités et en son potentiel.",
-        "Sa confiance en soi est une qualité qui le distingue des autres."
+        "$pronounP1 est reconnu pour sa grande confiance en $pronounP2-même.",
+        "$pronounP1 croit en ses capacités et en son potentiel.",
+        "Sa confiance en soi est une qualité qui $pronounC distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où il pourra continuer à croire en lui-même.",
-        "Sa confiance en soi le guidera vers de nouveaux succès dans le futur.",
-        "Il sait que sa confiance en lui lui ouvrira de nombreuses portes."
+        "$pronounP1 imagine un futur où $pronounP1 pourra continuer à croire en $pronounC-même.",
+        "Sa confiance en soi $pronounC guidera vers de nouveaux succès dans le futur.",
+        "$pronounP1 sait que sa confiance en $pronounC lui ouvrira de nombreuses portes."
       ]
     },
     "Mefiant": {
       "Past": [
-        "Il a souvent eu du mal à faire confiance aux autres dans le passé.",
+        "$pronounP1 a souvent eu du mal à faire confiance aux autres dans le passé.",
         "Sa méfiance lui a parfois causé des problèmes dans ses relations.",
-        "Il a toujours été sur ses gardes envers les autres."
+        "$pronounP1 a toujours été sur ses gardes envers les autres."
       ],
       "Present": [
-        "Il a du mal à accorder sa confiance aux autres.",
+        "$pronounP1 a du mal à accorder sa confiance aux autres.",
         "Sa méfiance peut parfois être perçue comme de la paranoïa.",
-        "Il est connu pour son manque de confiance envers les autres."
+        "$pronounP1 est connu pour son manque de confiance envers les autres."
       ],
       "Futur": [
-        "Il imagine un futur où il continuera à se méfier des intentions cachées des autres.",
+        "$pronounP1 imagine un futur où $pronounP1 continuera à se méfier des intentions cachées des autres.",
         "Sa méfiance pourrait limiter ses relations dans le futur.",
-        "Il sait que sa méfiance peut parfois le rendre solitaire."
+        "$pronounP1 sait que sa méfiance peut parfois le rendre solitaire."
       ]
     },
     "Passionne": {
       "Past": [
-        "Il a toujours été passionné par ses intérêts et ses projets dans le passé.",
+        "$pronounP1 a toujours été passionné par ses intérêts et ses projets dans le passé.",
         "Sa passion l'a souvent guidé dans ses choix de vie.",
-        "Il a toujours su investir émotionnellement dans ce qui lui tient à cœur."
+        "$pronounP1 a toujours su investir émotionnellement dans ce qui lui tient à cœur."
       ],
       "Present": [
-        "Il est connu pour son engagement et sa passion dans tout ce qu'il entreprend.",
-        "Il investit son cœur et son âme dans ses intérêts et ses projets.",
-        "Sa passion est une force qui le distingue des autres."
+        "$pronounP1 est connu pour son engagement et sa passion dans tout ce qu'$pronounP1 entreprend.",
+        "$pronounP1 investit son cœur et son âme dans ses intérêts et ses projets.",
+        "Sa passion est une force qui $pronounC distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où il pourra continuer à suivre sa passion.",
-        "Sa passion continuera à le motiver et à l'inspirer dans le futur.",
-        "Il sait que sa passion lui apportera beaucoup de bonheur."
+        "$pronounP1 imagine un futur où $pronounP1 pourra continuer à suivre sa passion.",
+        "Sa passion continuera à $pronounC motiver et à l'inspirer dans le futur.",
+        "$pronounP1 sait que sa passion lui apportera beaucoup de bonheur."
       ]
     },
     "Detache": {
       "Past": [
-        "Il a souvent été détaché des choses qui se passent autour de lui dans le passé.",
+        "$pronounP1 a souvent été détaché des choses qui se passent autour de $pronounP2 dans le passé.",
         "Son détachement lui a parfois valu des critiques de la part des autres.",
-        "Il a toujours eu du mal à s'investir émotionnellement dans ses relations."
+        "$pronounP1 a toujours eu du mal à s'investir émotionnellement dans ses relations."
       ],
       "Present": [
-        "Il préfère rester distant et désengagé des choses qui se passent autour de lui.",
+        "$pronounP1 préfère rester distant et désengagé des choses qui se passent autour de $pronounP2.",
         "Son détachement peut parfois être perçu comme de l'indifférence.",
-        "Il est connu pour son manque d'émotion et de passion envers les choses."
+        "$pronounP1 est connu pour son manque d'émotion et de passion envers les choses."
       ],
       "Futur": [
-        "Il imagine un futur où il continuera à rester détaché des émotions et des relations.",
-        "Son détachement pourrait le maintenir dans une certaine solitude dans le futur.",
-        "Il sait que son détachement peut parfois le rendre incompris."
+        "$pronounP1 imagine un futur où $pronounP1 continuera à rester détaché des émotions et des relations.",
+        "Son détachement pourrait $pronounC maintenir dans une certaine solitude dans le futur.",
+        "$pronounP1 sait que son détachement peut parfois $pronounC rendre incompris."
       ]
     },
     "Tolerant": {
       "Past": [
-        "Il a toujours su accepter les différences dans le passé.",
+        "$pronounP1 a toujours su accepter les différences dans le passé.",
         "Sa tolérance lui a permis de nouer des liens solides avec des personnes de divers horizons.",
-        "Il a toujours respecté les opinions et les croyances des autres."
+        "$pronounP1 a toujours respecté les opinions et les croyances des autres."
       ],
       "Present": [
-        "Il est reconnu pour sa grande tolérance envers les différences.",
-        "Il accepte les opinions et les modes de vie différents des siens.",
-        "Sa tolérance est une qualité qui le distingue des autres."
+        "$pronounP1 est reconnu pour sa grande tolérance envers les différences.",
+        "$pronounP1 accepte les opinions et les modes de vie différents des siens.",
+        "Sa tolérance est une qualité qui $pronounC distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où il pourra continuer à promouvoir la tolérance et le respect des différences.",
+        "$pronounP1 imagine un futur où $pronounP1 pourra continuer à promouvoir la tolérance et le respect des différences.",
         "Sa tolérance lui permettra de créer des relations harmonieuses dans le futur.",
-        "Il sait que sa tolérance lui apportera la paix intérieure."
+        "$pronounP1 sait que sa tolérance lui apportera la paix intérieure."
       ]
     },
     "Intolerant": {
       "Past": [
-        "Il a souvent eu du mal à accepter les différences dans le passé.",
+        "$pronounP1 a souvent eu du mal à accepter les différences dans le passé.",
         "Son intolérance lui a parfois valu des conflits avec les autres.",
-        "Il a toujours eu du mal à respecter les opinions et les croyances différentes des siennes."
+        "$pronounP1 a toujours eu du mal à respecter les opinions et les croyances différentes des siennes."
       ],
       "Present": [
-        "Il a du mal à accepter les opinions et les modes de vie différents des siens.",
+        "$pronounP1 a du mal à accepter les opinions et les modes de vie différents des siens.",
         "Son intolérance peut parfois être perçue comme de la fermeture d'esprit.",
-        "Il est connu pour sa résistance aux idées nouvelles et différentes."
+        "$pronounP1 est connu pour sa résistance aux idées nouvelles et différentes."
       ],
       "Futur": [
-        "Il imagine un futur où son intolérance pourrait le maintenir dans un état de conflit et d'isolement.",
+        "$pronounP1 imagine un futur où son intolérance pourrait le maintenir dans un état de conflit et d'isolement.",
         "Son manque de tolérance pourrait affecter ses relations dans le futur.",
-        "Il sait que son intolérance peut parfois le rendre malheureux."
+        "$pronounP1 sait que son intolérance peut parfois le rendre malheureux."
       ]
     },
     "Charismatique": {
       "Past": [
-        "Il a toujours eu un charme naturel qui attire les autres.",
-        "Son charisme lui a permis d'influencer et de motiver les gens autour de lui.",
-        "Il a toujours su captiver l'attention des autres par sa présence."
+        "$pronounP1 a toujours eu un charme naturel qui attire les autres.",
+        "Son charisme lui a permis d'influencer et de motiver les gens autour de $pronounP2.",
+        "$pronounP1 a toujours su captiver l'attention des autres par sa présence."
       ],
       "Present": [
-        "Il est reconnu pour son charisme et son pouvoir d'influence.",
-        "Il a un don pour inspirer et motiver les autres.",
-        "Son charisme est une qualité qui le distingue des autres."
+        "$pronounP1 est reconnu pour son charisme et son pouvoir d'influence.",
+        "$pronounP1 a un don pour inspirer et motiver les autres.",
+        "Son charisme est une qualité qui $pronounC distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où son charisme continuera à lui ouvrir des portes.",
+        "$pronounP1 imagine un futur où son charisme continuera à lui ouvrir des portes.",
         "Son charisme lui permettra de créer des relations solides et durables dans le futur.",
-        "Il sait que son charisme lui apportera beaucoup de succès."
+        "$pronounP1 sait que son charisme lui apportera beaucoup de succès."
       ]
     },
     "Reserve": {
       "Past": [
-        "Il a toujours préféré rester en retrait et observer dans le passé.",
+        "$pronounP1 a toujours préféré rester en retrait et observer dans le passé.",
         "Sa réserve lui a parfois valu d'être mal compris par les autres.",
-        "Il a toujours eu du mal à s'ouvrir aux autres."
+        "$pronounP1 a toujours eu du mal à s'ouvrir aux autres."
       ],
       "Present": [
-        "Il préfère rester discret et observer plutôt que de prendre la parole.",
+        "$pronounP1 préfère rester discret et observer plutôt que de prendre la parole.",
         "Sa réserve peut parfois être perçue comme de la timidité.",
-        "Il est connu pour son calme et sa discrétion en société."
+        "$pronounP1 est connu pour son calme et sa discrétion en société."
       ],
       "Futur": [
-        "Il imagine un futur où sa réserve pourrait le maintenir dans un état de solitude et d'isolement.",
+        "$pronounP1 imagine un futur où sa réserve pourrait $pronounC maintenir dans un état de solitude et d'isolement.",
         "Sa timidité pourrait limiter ses opportunités dans le futur.",
-        "Il sait que sa réserve peut parfois le rendre incompris."
+        "$pronounP1 sait que sa réserve peut parfois $pronounC rendre incompris."
       ]
     },
     "Organise": {
       "Past": [
-        "Il a toujours su planifier et structurer ses activités dans le passé.",
+        "$pronounP1 a toujours su planifier et structurer ses activités dans le passé.",
         "Son sens de l'organisation lui a permis d'atteindre ses objectifs de manière efficace.",
-        "Il a toujours préféré maintenir de l'ordre et de la structure dans sa vie."
+        "$pronounP1 a toujours préféré maintenir de l'ordre et de la structure dans sa vie."
       ],
       "Present": [
-        "Il est reconnu pour son organisation et sa capacité à gérer plusieurs tâches à la fois.",
-        "Il sait planifier ses activités pour maximiser son efficacité.",
-        "Son sens de l'organisation est une qualité qui le distingue des autres."
+        "$pronounP1 est reconnu pour son organisation et sa capacité à gérer plusieurs tâches à la fois.",
+        "$pronounP1 sait planifier ses activités pour maximiser son efficacité.",
+        "Son sens de l'organisation est une qualité qui $pronounC distingue des autres."
       ],
       "Futur": [
-        "Il imagine un futur où son sens de l'organisation lui permettra de réussir dans ses entreprises.",
+        "$pronounP1 imagine un futur où son sens de l'organisation lui permettra de réussir dans ses entreprises.",
         "Son organisation lui apportera la clarté et la stabilité dans le futur.",
-        "Il sait que son sens de l'organisation lui permettra d'atteindre ses objectifs."
+        "$pronounP1 sait que son sens de l'organisation lui permettra d'atteindre ses objectifs."
       ]
     },
     "Desorganise": {
       "Past": [
-        "Il a souvent eu du mal à maintenir de l'ordre dans ses activités dans le passé.",
+        "$pronounP1 a souvent eu du mal à maintenir de l'ordre dans ses activités dans le passé.",
         "Son désordre lui a parfois causé des problèmes d'efficacité.",
-        "Il a toujours préféré la spontanéité à la planification."
+        "$pronounP1 a toujours préféré la spontanéité à la planification."
       ],
       "Present": [
-        "Il a du mal à planifier et à structurer ses activités.",
+        "$pronounP1 a du mal à planifier et à structurer ses activités.",
         "Son désordre peut parfois être perçu comme de la confusion.",
-        "Il est connu pour son manque d'organisation dans sa vie quotidienne."
+        "$pronounP1 est connu pour son manque d'organisation dans sa vie quotidienne."
       ],
       "Futur": [
-        "Il imagine un futur où son désordre pourrait limiter ses opportunités et ses perspectives.",
+        "$pronounP1 imagine un futur où son désordre pourrait limiter ses opportunités et ses perspectives.",
         "Son manque d'organisation pourrait lui causer des problèmes dans le futur.",
-        "Il sait que son désordre peut parfois le rendre inefficace."
+        "$pronounP1 sait que son désordre peut parfois le rendre inefficace."
       ]
     }
   }

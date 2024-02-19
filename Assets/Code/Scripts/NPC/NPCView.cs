@@ -64,7 +64,7 @@ public class NPCView : MonoBehaviour
             CheckTrait(npc); 
         }
 
-        npc.Description = NPCManager.GenerateRandomDescription(m_NameText.text, npc.PersonalityTraits);
+        npc.Description = NPCManager.GenerateRandomDescription(npc);
         m_DescriptionText.text = npc.Description;
     }
 

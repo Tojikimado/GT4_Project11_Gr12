@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using System.Diagnostics;
 using System.Text;
 using System.Globalization;
+using UnityEngine.Analytics;
 
 public class NPCManager : MonoBehaviour
 {
@@ -71,7 +72,7 @@ public class NPCManager : MonoBehaviour
         newNPC.PersonalityTraits = GenerateRandomPersonalityTraits();
         newNPC.PhysicalTraits = GenerateRandomPhysicalTraits();
         newNPC.Name = GenerateRandomName(newNPC);
-        newNPC.Description = GenerateRandomDescription(newNPC.Name, newNPC.PersonalityTraits);
+        newNPC.Description = GenerateRandomDescription(newNPC);
 
         NPCView newNPCView = NPCGO.GetComponent<NPCView>();
         newNPCView.spawnface();
@@ -152,25 +153,33 @@ public class NPCManager : MonoBehaviour
         return randomTraits;
     }
 
-    public string GenerateRandomDescription(string name, List<TraitSO> personalityTraits)
-    {
-        string description = "";
-        
-        foreach (TraitSO trait in personalityTraits)
+        public string GenerateRandomDescription(NPC npc)
         {
-            string traitName = RemoveDiacritics(trait.Name.Trim());
-            if (m_SentencesTemplates.TraitsSentences.ContainsKey(traitName))
+            string description = "";
+        
+            foreach (TraitSO trait in npc.PersonalityTraits)
             {
-                TraitSentences traitSentences = m_SentencesTemplates.TraitsSentences[traitName];
-                string randomSentence = GetRandomSentence(traitSentences);
-                description += randomSentence + "\n";
-            }
-            else
-                UnityEngine.Debug.LogWarning("La clé '" + traitName + "' n'est pas présente dans le dictionnaire.");
-        }
+                string traitName = RemoveDiacritics(trait.Name.Trim());
+                if (m_SentencesTemplates.TraitsSentences.ContainsKey(traitName))
+                {
+                    TraitSentences traitSentences = m_SentencesTemplates.TraitsSentences[traitName];
+                    string randomSentence = GetRandomSentence(traitSentences);
 
-        return description;
-    }
+                    randomSentence = randomSentence.Replace("$pronounP1", DetermineGender(npc) == true ? "il" : "elle");
+                    randomSentence = randomSentence.Replace("$pronounP2", DetermineGender(npc) == true ? "lui" : "elle");
+                    randomSentence = randomSentence.Replace("$pronounC", DetermineGender(npc) == true ? "le" : "la");
+
+                    if (randomSentence.StartsWith("il ") || randomSentence.StartsWith("elle ") || randomSentence.StartsWith("lui ") || randomSentence.StartsWith("le ") || randomSentence.StartsWith("la "))
+                        randomSentence = char.ToUpper(randomSentence[0]) + randomSentence.Substring(1);
+
+                description += randomSentence + "\n";
+                }
+                else
+                    UnityEngine.Debug.LogWarning("La clé '" + traitName + "' n'est pas présente dans le dictionnaire.");
+            }
+
+            return description;
+        }
 
     string GetRandomSentence(TraitSentences traitSentences)
     {
