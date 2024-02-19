@@ -1934,7 +1934,7 @@ MonoBehaviour:
   - {fileID: 6175287860909461201}
   - {fileID: 1363442561065865364}
   m_MyNPC: {fileID: 850336842573862204}
-  m_DescObject: {fileID: 4910068598099234822}
+  m_DescObject: {fileID: 1930903990974985510}
   m_TraitBOX: {fileID: 3303840902492050597}
   m_NPCFacePrefab: {fileID: 6896447176189835517, guid: 48a58bfec6a14fe4a9640e3533c1121b, type: 3}
   NPCFaceSpawned: {fileID: 0}
