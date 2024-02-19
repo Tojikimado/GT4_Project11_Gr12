@@ -6,12 +6,13 @@ using UnityEngine;
 
 public class FaceGenerator : MonoBehaviour
 {
-    public int seed;
-    public List<int> SepSeed = new List<int>();
+    [SerializeField] 
+    private List<faceAssetSO> Assets;
+    private List<int> SeparatedSeed = new List<int>();
     public NPC refNpc;
     public List<faceAssetSO> BaseList = new List<faceAssetSO>();
     public TraitSO TraitVieux;
-    [SerializeField] private List<faceAssetSO> Assets;
+    
     private int seedId;
 
     public void GenerateFace(int id,NPC newNpc, NpcFaceView newFace)
@@ -22,16 +23,12 @@ public class FaceGenerator : MonoBehaviour
     }
     public void SetUp(int _seed)
     {
-        seed = _seed;
-        TruncateSeed();
-    }
-    private void TruncateSeed()
-    {
-        for(int i = 0; i < Mathf.Abs(seed).ToString().Length; i++)
+        for (int i = 0; i < Mathf.Abs(_seed).ToString().Length; i++)
         {
-            SepSeed.Add((int)Char.GetNumericValue(Mathf.Abs(seed).ToString()[i]));
+            SeparatedSeed.Add((int)Char.GetNumericValue(Mathf.Abs(_seed).ToString()[i]));
         }
     }
+
     private faceAssetSO GenerateBase()
     {
         if (Assets != null)
@@ -66,6 +63,7 @@ public class FaceGenerator : MonoBehaviour
         }
         return BaseList[SepSeed[seedId]];
     }
+
     private faceAssetSO GenerateMouth()
     {
         List<faceAssetSO> MouthList = new List<faceAssetSO>();
@@ -156,11 +154,10 @@ public class FaceGenerator : MonoBehaviour
         {
             if (assetSO.Type == type)
             {
-                if(CheckIfTraitGood(assetSO))
+                if(CheckIfPersonalityTraitsGood(assetSO))
                 {
                     TmpList.Add(assetSO);  
                 }
-                
             }
         }
         if(TmpList.Count == 0)
@@ -169,10 +166,7 @@ public class FaceGenerator : MonoBehaviour
             {
                 if (assetSO.Type == type)
                 {
-                 
                     TmpList.Add(assetSO);
-                  
-
                 }
             }
         }
@@ -185,15 +179,11 @@ public class FaceGenerator : MonoBehaviour
         {
             if (assetSO.Type == type)
             {
-
                 TmpList.Add(assetSO);
-
-
             }
         }
         return TmpList;
     }
-
     private List<faceAssetSO> GenerateTmpBaseListViaPhysical(AssetType type)
     {
         List<faceAssetSO> TmpList = new List<faceAssetSO>();
@@ -201,21 +191,17 @@ public class FaceGenerator : MonoBehaviour
         {
             if (assetSO.Type == type)
             {
-                if(CheckIfTraitGood2(assetSO))
+                if(CheckIfPhysicalTraitsGood(assetSO))
                 {
                     TmpList.Add(assetSO);
                 }
-                
-
-
             }
         }
         return TmpList;
-   
     }
 
 
-    private bool CheckIfTraitGood2(faceAssetSO _assetSO)
+    private bool CheckIfPhysicalTraitsGood(faceAssetSO _assetSO)
     {
         foreach (var trait in _assetSO.Traits)
         {
@@ -226,8 +212,7 @@ public class FaceGenerator : MonoBehaviour
         }
         return false;
     }
-
-    private bool CheckIfTraitGood(faceAssetSO _assetSO)
+    private bool CheckIfPersonalityTraitsGood(faceAssetSO _assetSO)
     {
         foreach (var trait in _assetSO.Traits)
         {
