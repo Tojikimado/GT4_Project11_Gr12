@@ -608,14 +608,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_NPCList: []
-  m_placeHolder:
+  m_PlaceHolder:
   - {fileID: 1253614345}
   - {fileID: 321652048}
   - {fileID: 2015552207}
   - {fileID: 1708316753}
   - {fileID: 1078141404}
   - {fileID: 562646409}
-  seed: {fileID: 1060134510}
+  m_Seed: {fileID: 1060134510}
 --- !u!114 &869531226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,12 +640,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd95e825a3a3904aaafa6e701c0aed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seed: 0
-  SepSeed: 
-  refNpc: {fileID: 850336842573862204, guid: 5560c53f9d49d0144812e425c6cd2ca4, type: 3}
-  BaseList: []
-  TraitVieux: {fileID: 11400000, guid: 344cd883d0b1b674ab4af92f12dbcf1a, type: 2}
-  Assets:
+  m_Assets:
+  - {fileID: 11400000, guid: 98faf439dde799643acf1f156ceedd79, type: 2}
+  - {fileID: 11400000, guid: 768ae52fb885d9c479d95f2533045235, type: 2}
+  - {fileID: 11400000, guid: 20145df28f712ef46a1e8c5058ccb785, type: 2}
+  - {fileID: 11400000, guid: 047c98c052474044fafedea03d510014, type: 2}
+  - {fileID: 11400000, guid: 2d8ca06622f83d943aee7b1138e44d07, type: 2}
+  - {fileID: 11400000, guid: 29b99c68b23117f4d88386d93c677aa1, type: 2}
+  - {fileID: 11400000, guid: f2091947f6d12e74991107302ea1996e, type: 2}
+  - {fileID: 11400000, guid: 10971d58bfb87e147bd8fe334d7df2b2, type: 2}
   - {fileID: 11400000, guid: 2267cd54bf9c637479542bfc6206a16d, type: 2}
   - {fileID: 11400000, guid: 97dd47183f743694fb052b0f2365f93b, type: 2}
   - {fileID: 11400000, guid: 87d8fbf6f5299ff44aeadd74a76f1e06, type: 2}
@@ -654,9 +657,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e5ba2d7dcceaa364daaf23a73c047694, type: 2}
   - {fileID: 11400000, guid: 9d30414a33b96ec409a9ca745569d108, type: 2}
   - {fileID: 11400000, guid: b022c6a2fc5148b46aab62dec22de48e, type: 2}
-  - {fileID: 11400000, guid: 24ff0bbe3c0b8cf45bf02e97d1cc6501, type: 2}
-  - {fileID: 11400000, guid: 98faf439dde799643acf1f156ceedd79, type: 2}
-  - {fileID: 11400000, guid: d54d8bb830e41344ba619d455d503e2a, type: 2}
+  - {fileID: 11400000, guid: d9191bc8f17d204419af5e69cb3a0948, type: 2}
+  - {fileID: 11400000, guid: bc3141048fb1c5f4096e988cad9391c2, type: 2}
+  - {fileID: 11400000, guid: 5f4a41e3ee25eab49ae70f2bc4340793, type: 2}
+  - {fileID: 11400000, guid: 5f0c20d0deda325469dc429bae874e11, type: 2}
+  - {fileID: 11400000, guid: b1bb5b18810d8a64da01632910763528, type: 2}
+  - {fileID: 11400000, guid: 7c2ce8035d6576c499eafc574cf604aa, type: 2}
+  - {fileID: 11400000, guid: cd04136a35bb2fd4687f198969a831c6, type: 2}
+  - {fileID: 11400000, guid: ea247bfe9bfbb0842b98aeb4b551d8ca, type: 2}
+  - {fileID: 11400000, guid: d455cf3c0238de244b7fd86206f42145, type: 2}
+  - {fileID: 11400000, guid: 64662319ffbbe5b449572f936d71bd1e, type: 2}
+  - {fileID: 11400000, guid: 985ac44d0d9748b488f2d359e2421624, type: 2}
+  - {fileID: 11400000, guid: 3beaa3778bc03ac4999060efcb6f7d1f, type: 2}
   - {fileID: 11400000, guid: 29abd7829b33f4447b845940ec8d3cf7, type: 2}
   - {fileID: 11400000, guid: 3664b67c12a57d04ea73f9907f446de8, type: 2}
   - {fileID: 11400000, guid: 6f86ad974b38ed6478eabf5eddc30a8e, type: 2}
@@ -666,6 +678,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 76ab7e1317a2c5340887f20de8136340, type: 2}
   - {fileID: 11400000, guid: 62c498057b597774ca741a29d2feca2e, type: 2}
   - {fileID: 11400000, guid: 357f66b49bf3ec34c985c0f5aa423cfe, type: 2}
+  - {fileID: 11400000, guid: 24ff0bbe3c0b8cf45bf02e97d1cc6501, type: 2}
+  - {fileID: 11400000, guid: d54d8bb830e41344ba619d455d503e2a, type: 2}
+  - {fileID: 11400000, guid: ea3129a564dc7f04fae92f08994ad43f, type: 2}
+  - {fileID: 11400000, guid: 1ea8378ddc70e3a419aaa45ebcb9d01c, type: 2}
+  - {fileID: 11400000, guid: 1413a723776c7d94c8b378cfc0b05f53, type: 2}
+  - {fileID: 11400000, guid: cb7307a2e4639354db5beeec6c759598, type: 2}
+  - {fileID: 11400000, guid: 7fc96f3c7e59c0f42a6c6460971733f2, type: 2}
+  - {fileID: 11400000, guid: 0bfa838b08ca38f419bc7ab096afea00, type: 2}
+  - {fileID: 11400000, guid: 93dce94f04ed0ae4fa9b2507ac99335e, type: 2}
+  - {fileID: 11400000, guid: c46118baef2b1ce45b8d6a048beed577, type: 2}
+  - {fileID: 11400000, guid: 5ec094797b33a824897c0b594a199f1f, type: 2}
+  RefNpc: {fileID: 0}
+  BaseList: []
+  TraitVieux: {fileID: 11400000, guid: 344cd883d0b1b674ab4af92f12dbcf1a, type: 2}
 --- !u!1 &898699734
 GameObject:
   m_ObjectHideFlags: 0

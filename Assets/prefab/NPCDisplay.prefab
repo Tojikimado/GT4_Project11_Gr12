@@ -1933,11 +1933,11 @@ MonoBehaviour:
   - {fileID: 2957645730081089165}
   - {fileID: 6175287860909461201}
   - {fileID: 1363442561065865364}
-  MyNPC: {fileID: 850336842573862204}
-  DescObject: {fileID: 1930903990974985510}
-  TraitBOX: {fileID: 3303840902492050597}
+  m_MyNPC: {fileID: 850336842573862204}
+  m_DescObject: {fileID: 4910068598099234822}
+  m_TraitBOX: {fileID: 3303840902492050597}
   m_NPCFacePrefab: {fileID: 6896447176189835517, guid: 48a58bfec6a14fe4a9640e3533c1121b, type: 3}
-  m_NPCFaceSpawned: {fileID: 0}
+  NPCFaceSpawned: {fileID: 0}
   m_Canvas: {fileID: 8216703915758558591}
   SlotPos: {x: 0, y: 0, z: 0}
 --- !u!1 &3934568911954151003
